@@ -1,0 +1,92 @@
+@tailwind base;
+@layer base {
+
+  @font-face {
+    font-family: "MrsEaves";
+    src: url("/fonts/MrsEaves.woff") format('woff');
+    font-display: swap;
+}
+
+
+.smooth{
+    transition: all 0.5s ease-out;
+}
+.smoothslow{
+    transition: all 1s ease;
+}
+
+
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+.slide-fade-leave-active {
+  transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.slideup-fade-enter-active {
+  transition: all .5s ease;
+}
+.slideup-fade-leave-active {
+  transition: all .3s ease;
+}
+.slideup-fade-enter, .slideup-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+
+.fade-enter-active {
+  transition: all .3s ease-in;
+}
+.fade-leave-active {
+  transition: all .1s ease-out;
+}
+.fade-enter, .fade-leave-to
+{
+  opacity: 0;
+}
+
+
+.fade-delay-enter-active {
+  transition: all .3s ease-in;
+  transition-delay: 0.5s;
+}
+.fade-delay-leave-active {
+  transition: all .1s ease-out;
+  transition-delay: 0.5s;
+}
+.fade-delay-enter, .fade-delay-leave-to
+{
+  opacity: 0;
+}
+.afterline{
+  @apply relative;
+}
+.afterline::after{
+  @apply absolute w-20 -bottom-1 bg-taupe -left-2 ;
+  height: 2px;
+  content: ''
+
+}
+.afterline.afterline-blue::after{
+  @apply bg-blue;
+
+
+}
+
+
+}
+@tailwind components;
+@tailwind utilities;
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
