@@ -30,13 +30,19 @@
 
 <script>
 import { developments } from '~/static/properties'
-import { shuffleArray } from '~/utils/common'
+import { shuffleArray, availableHouses, amountAvailableNow } from '~/utils/common'
+import { getSiteMeta } from '~/utils/getSiteMeta'
 
 export default {
-  asyncData ({ params }) {
+  asyncData ({ params, error }) {
     const developmentName = params.development
     const [development] = developments.filter(x => x.development.toLowerCase() === developmentName.toLowerCase())
-    const amountAvailable = development.houses.filter(x => x.status === 'Available' || x.status === 'Viewing Home').length
+    if (!development) {
+      return error({ statusCode: 404, message: 'Page Not Found' })
+    }
+    const houses = development.houses
+    const amountAvailable = amountAvailableNow(houses)
+    const available = availableHouses(houses)
     const sitelayout = development.siteLayout || null
     const images = shuffleArray(development.images.filter(x => x.featured))
 
@@ -45,22 +51,23 @@ export default {
       images,
       amountAvailable,
       sitelayout,
-      houses: development.houses
-
+      houses: development.houses,
+      availableHouses: available
     }
   },
-
+  head () {
+    return {
+      ...this.meta
+    }
+  },
   computed: {
-    availableHouses () {
-      return this.houses.filter(x => x.status === 'Available' || x.status === 'Future Release' || x.status === 'Viewing Home').sort((a, b) => {
-        if (a.status === 'Available' && b.status === 'Future Release') {
-          return -1
-        }
-        if (a.status === 'Future Release' && b.status === 'Available') {
-          return 1
-        }
-        return 0
-      })
+    meta () {
+      const metaData = {
+        title: this.development.development + ' Homes',
+        description: this.development.brief,
+        url: `${this.$config.rootUrl}${this.$route.path}`
+      }
+      return getSiteMeta(metaData)
     }
   }
 

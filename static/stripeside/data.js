@@ -88,6 +88,7 @@ const allPlots = {
 }
 
 const crossley = {
+  style: 'Crossley',
   floorplans: [
     '/stripeside/crossley/ground-floor.png',
     '/stripeside/crossley/first-floor.png',
@@ -96,17 +97,18 @@ const crossley = {
 }
 
 const crynoch = {
+  style: 'Crynoch',
   floorplans: [
     '/stripeside/crynoch/ground-floor.png',
     '/stripeside/crynoch/first-floor.png',
-    '/stripeside/crynoch/second-floor.png'
+    '/stripeside/crynoch/second-floor.png',
+    '/stripeside/crynoch/garage.png'
   ]
 }
 const plot1 = {
   ...allPlots,
   ...crynoch,
   status: 'Viewing Home',
-  name: 'Crynoch',
   plot: '1',
   image: '/stripeside/Stripeside-30.png',
   brief: 'A striking 5 bedroom home with extremely spacious accommodation over three levels. Timeless architecture, modern kitchen, spacious living areas and a detached double garage.'
@@ -115,7 +117,6 @@ const plot2 = {
   ...allPlots,
   ...crynoch,
   status: 'Available',
-  name: 'Garioch',
   plot: '2',
   image: '/stripeside/Stripeside-48.png',
   brief: 'A striking 5 bedroom home with extremely spacious accommodation over three levels. Timeless architecture, modern kitchen, spacious living areas and a detached double garage.'
@@ -124,7 +125,6 @@ const plot3 = {
   ...allPlots,
   ...crynoch,
   status: 'Available',
-  name: 'Monqiuch',
   plot: '3',
   image: '/stripeside/Stripeside-42.png',
   brief: 'A striking 5 bedroom home with extremely spacious accommodation over three levels. Timeless architecture, modern kitchen, spacious living areas and a detached double garage.'
@@ -188,6 +188,8 @@ export const stripeside = {
   area: 'Netherley',
   type: 'New Build Homes',
   siteLayout: 'StripesideSiteLayout',
+  logo: '/stripeside/StripesideLogoLight.png',
+  backimage: '/stripeside/StripesideBackFar.png',
   brief: 'Stripeside’s 4 and 5-bedroom detached villas form part of a small exclusive development built by Forbes Homes, builders who know all about country living. Once completed, Stripeside will comprise three 5-bedroom properties and nine 4-bedroom homes',
   mainImages: [{ src: '/stripeside/Stripeside-27.png', room: 'exterior', featured: true }, { src: '/stripeside/Stripeside-25.png', room: 'exterior', featured: true }, { src: '/stripeside/Stripeside-20.png', room: 'exterior', featured: true }],
   images: [

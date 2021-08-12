@@ -1,29 +1,43 @@
 <template>
-  <div>
-    <SectionTopBlue>
-      <div class="flex flex-wrap items-center justify-between w-full">
-        <header class="flex flex-col flex-wrap items-baseline">
-          <h1 class="mt-12 text-3xl md:text-4xl lg:text-5xl">
-            {{ city }}
-          </h1>
-        </header>
-      </div>
-      {{ propertiesInCity }}
-    </SectionTopBlue>
+  <div class="">
+    <PropertiesPage :developments="relevantDevelopments">
+      <template #header>
+        Properties for sale in {{ city }}
+      </template>
+    </PropertiesPage>
   </div>
 </template>
 
 <script>
 import { developments } from '~/static/properties'
+import { getSiteMeta } from '~/utils/getSiteMeta'
 
 export default {
-  asyncData ({ params }) {
-    const city = params.city
-    const propertiesInCity = developments.filter(x => x.city.toLowerCase() === city.toLowerCase())
+  asyncData ({ params, error }) {
+    const city = params.city.charAt(0).toUpperCase() + params.city.slice(1)
+    const relevantDevelopments = developments.filter(x => x.city.toLowerCase() === city.toLowerCase())
 
+    if (!relevantDevelopments.length) {
+      return error({ statusCode: 404, message: 'Page Not Found' })
+    }
     return {
       city,
-      propertiesInCity
+      relevantDevelopments
+    }
+  },
+  head () {
+    return {
+      ...this.meta
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        title: 'New Build Homes in ' + this.city,
+        description: `Find new builds and developments for sale in ${this.city}. Forbes Homes exclusive developments of new houses in ${this.city} include large plots of land.`,
+        url: `${this.$config.rootUrl}${this.$route.path}`
+      }
+      return getSiteMeta(metaData)
     }
   }
 

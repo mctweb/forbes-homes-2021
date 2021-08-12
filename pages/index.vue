@@ -31,15 +31,23 @@
         <SectionHalfStandoff title="Our Team" image="/deeview/Deeview-Dining.png" class="pt-6 md:pt-12" :button="{to:'/about', text: 'About Us'}">
           Forbes Homes is a family owned business with over 30 years' experience in the construction industry. We understand the importance of your home, and our mission is your happiness.
         </SectionHalfStandoff>
-        <StripesideLargeStandout />
+        <SectionLargeStandout :development="mainDevelopment" :available="mainDevelopment.available" />
       </div>
     </section>
   </main>
 </template>
 
 <script>
+import { developments } from '~/static/properties'
 import { getSiteMeta } from '~/utils/getSiteMeta'
+import { amountAvailableNow } from '~/utils/common'
+
 export default {
+  asyncData () {
+    return {
+      developments
+    }
+  },
   head () {
     return {
       ...this.meta
@@ -53,6 +61,14 @@ export default {
         url: `${this.$config.rootUrl}${this.$route.path}`
       }
       return getSiteMeta(metaData)
+    },
+    mainDevelopment () {
+      const development = developments[0]
+      const available = amountAvailableNow(development.houses)
+      return {
+        ...development,
+        available
+      }
     }
   }
 

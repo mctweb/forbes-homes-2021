@@ -3,8 +3,11 @@
     <SectionTopBlue>
       <div class="flex flex-wrap items-end justify-between w-full my-12">
         <header class="flex flex-col flex-wrap items-baseline ">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-            {{ home.name || 'Plot ' + home.plot }}
+          <h3 v-if="home.style" class="font-serif text-2xl tracking-wide text-gray-300 uppercase">
+            {{ home.style }}
+          </h3>
+          <h1 class="mb-6 text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-50 md:mb-12">
+            {{ 'Plot ' + home.plot }}
           </h1>
           <h2 class="text-xl">
             {{ development.development }}, {{ development.area }}
@@ -31,7 +34,7 @@
       <SectionImageSlider :images="images" :alt="home.name + ' ' + development.development" />
     </SectionTopBlue>
     <SectionSimpleText>{{ development.brief }}</SectionSimpleText>
-    <Floorplans :plans="home.floorplans" />
+    <Floorplans v-if="home.floorplans" :plans="home.floorplans" />
     <SectionHalfStandoff v-for="(feature,i) in home.features" :key="i" :title="feature.title" :image="feature.image" :flip="i % 4 === 2 || i % 4 === 3">
       {{ feature.description }}
     </SectionHalfStandoff>
@@ -54,7 +57,7 @@
         </li>
       </ul>
     </section>
-    <component :is="home.siteLayout" class="max-h-screen mx-auto mb-32" :selectedplot="home.plot" />
+    <component :is="home.siteLayout" class="max-h-screen pb-32 mx-auto" :selectedplot="home.plot" />
     <MapsSingle :location="home.mapLocation" />
     <section class="flex flex-wrap p-12 md:py-20 lg:py-32">
       <SectionTextCard v-for="{title, description} in home.location" :key="title" class="w-full max-w-sm p-6 mx-auto md:w-1/3" :title="title">
@@ -80,20 +83,21 @@
 <script>
 import { developments } from '~/static/properties'
 import { shuffleArray } from '~/utils/common'
+import { getSiteMeta } from '~/utils/getSiteMeta'
 
 export default {
-  asyncData ({ params }) {
+  asyncData ({ params, error }) {
     const house = params.house
     const developmentName = params.development
     const [development] = developments.filter(x => x.development.toLowerCase() === developmentName.toLowerCase())
     const amountAvailable = development.houses.filter(x => x.status === 'Available' || x.status === 'Viewing Home').length
     const amountComingSoon = development.houses.filter(x => x.status === 'Future Release').length
     const home = development.houses.find((x) => {
-      if (x.name) {
-        return house === x.name.toLowerCase()
-      }
       return house === 'plot' + x.plot
     })
+    if (!home) {
+      return error({ statusCode: 404, message: 'Page Not Found' })
+    }
     const images = home.images || shuffleArray(development.images.filter(x => x.featured))
 
     return {
@@ -103,6 +107,21 @@ export default {
       amountAvailable,
       amountComingSoon,
       images
+    }
+  },
+  head () {
+    return {
+      ...this.meta
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        title: 'About',
+        description: this.development.brief,
+        url: `${this.$config.rootUrl}${this.$route.path}`
+      }
+      return getSiteMeta(metaData)
     }
   }
 

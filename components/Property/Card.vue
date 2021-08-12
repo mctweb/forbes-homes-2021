@@ -4,11 +4,11 @@
       <nuxt-img v-if="property.image" :src="property.image" preset="large" class="object-cover w-full h-full" />
     </aside>
     <section class="flex flex-col justify-center w-full max-w-xl p-12 pr-16 mx-auto md:w-1/2">
-      <p class="text-sm font-bold">
-        Plot {{ property.plot }}
+      <p v-if="property.style" class="text-sm font-bold">
+        {{ property.style }}
       </p>
       <p class="pb-3 text-xl font-bold">
-        {{ property.name || property.status + ' Plot' }}
+        {{ ' Plot' + property.plot }}
       </p>
       <p>
         {{ property.brief }}
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import { propertyLink } from '~/utils/common'
+
 export default {
   props: {
     property: {
@@ -30,9 +32,7 @@ export default {
   },
   computed: {
     propertyLink () {
-      const { city, area, development, name, plot } = this.property
-
-      return `/developments/${city.toLowerCase()}/${area.toLowerCase()}/${development.toLowerCase()}/${name ? name.toLowerCase() : 'plot' + plot.toLowerCase()}`
+      return propertyLink(this.property)
     }
   }
 }
