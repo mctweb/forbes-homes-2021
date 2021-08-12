@@ -4,7 +4,7 @@
       <h3 v-if="house.style" class="font-bold">
         {{ house.style }}
       </h3>
-      <h1 class="pb-2 mb-6 text-4xl text-blue afterline afterline-blue">
+      <h1 class="pb-2 mb-6 font-serif text-4xl text-blue afterline afterline-blue">
         {{ 'Plot ' + house.plot }}
       </h1>
       <h2 class="pb-12">

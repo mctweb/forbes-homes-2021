@@ -7,7 +7,7 @@
       <p v-if="property.style" class="text-sm font-bold">
         {{ property.style }}
       </p>
-      <p class="pb-3 text-xl font-bold">
+      <p class="pb-3 font-serif text-2xl lg:text-4xl">
         {{ ' Plot' + property.plot }}
       </p>
       <p>

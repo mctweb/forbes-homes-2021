@@ -1,6 +1,6 @@
 <template>
   <section>
-    <header v-if="title" class="block pb-3 mb-6 font-serif text-xl leading-none tracking-widest uppercase lg:leading-none lg:text-2xl afterline" :class="[blue ? 'text-gray-200' : 'text-blue thin']">
+    <header v-if="title" class="block pb-3 mb-6 font-serif text-xl leading-none tracking-wide lg:leading-none lg:text-2xl afterline" :class="[blue ? 'text-gray-200' : 'text-blue thin']">
       {{ title }}
     </header>
     <p><slot /></p>

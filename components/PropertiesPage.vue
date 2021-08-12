@@ -6,18 +6,18 @@
       </h1>
       <div class="flex flex-wrap items-end justify-between w-full my-12">
         <header v-if="$slots.header" class="flex flex-col flex-wrap items-baseline ">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             {{ development }}
           </h2>
-          <h3 class="text-xl">
+          <h3 class="text-xl text-gray-400">
             {{ area }}, {{ city }}
           </h3>
         </header>
         <header v-else class="flex flex-col flex-wrap items-baseline ">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             {{ development }}
           </h1>
-          <h2 class="text-xl">
+          <h2 class="text-xl text-gray-400">
             {{ area }}, {{ city }}
           </h2>
         </header>

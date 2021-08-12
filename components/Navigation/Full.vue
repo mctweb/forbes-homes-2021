@@ -47,7 +47,7 @@ export default {
   },
   watch: {
     '$route' () {
-      this.menuIsOpen = !this.menuIsOpen
+      this.menuIsOpen = false
     }
   },
   mounted () {

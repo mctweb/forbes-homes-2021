@@ -31,7 +31,7 @@
         <SectionHalfStandoff title="Our Team" image="/deeview/Deeview-Dining.png" class="pt-6 md:pt-12" :button="{to:'/about', text: 'About Us'}">
           Forbes Homes is a family owned business with over 30 years' experience in the construction industry. We understand the importance of your home, and our mission is your happiness.
         </SectionHalfStandoff>
-        <SectionLargeStandout :development="mainDevelopment" :available="mainDevelopment.available" />
+        <PropertyLargeStandout :development="mainDevelopment" :available="mainDevelopment.available" />
       </div>
     </section>
   </main>
