@@ -1,7 +1,9 @@
 <template>
-  <SectionGeneral title="Get In Touch">
-    Contact
-  </SectionGeneral>
+  <SectionTopBlue title="Get In Touch">
+    <h1 class="text-4xl">
+      To Be Completed
+    </h1>
+  </SectionTopBlue>
 </template>
 
 <script>
