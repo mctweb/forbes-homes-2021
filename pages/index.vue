@@ -4,7 +4,7 @@
       <div class="mx-auto">
         <HeaderHomepage />
         <StripesideTripleFeature />
-        <div class="grid grid-cols-2 gap-6 p-6 -mt-6 md:gap-12 md:px-12 md:pb-12 bg-blue">
+        <div class="grid gap-6 p-6 -mt-6 md:grid-cols-2 md:gap-12 md:px-12 md:pb-12 bg-blue">
           <NuxtButton to="/developments" light class="flex-1">
             View Properties
           </NuxtButton>

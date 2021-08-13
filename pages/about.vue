@@ -41,8 +41,8 @@ export default {
       quote: {
         message: 'Forbes Homes are not your average building company - they are a long standing family run company with their roots firmly in the North East of Scotland. They take a real pride in their work whether it be new build ( commercial and residential ) or renovations / extensions . Their experienced team of specialists covers all trades and the quality of workmanship is second to none . I have no hesitation in recommending their services .',
         author: 'Dave',
-        authorTitle: 'Homeowner',
-        profile: '/images/Deeview-Dining.png'
+        authorTitle: 'Homeowner'
+
       }
     }
   },

@@ -1,14 +1,14 @@
 <template>
   <div class="relative w-full overflow-hidden" style="height: 80vh;">
-    <div class="h-full px-20">
+    <div class="h-full md:px-16 lg:px-20">
       <!-- <nuxt-img ref="image" :src="currentImg.src" class="object-cover w-full h-full image" :class="imageClass" :alt="alt + ' ' +currentImg.room" /></nuxt-img> -->
       <PropertyImageCard :house="currentHouse" class="fade" :class="fadeClass" />
     </div>
 
-    <button class="absolute left-0 inline-flex items-center justify-center w-16 h-16 p-3 transition duration-200 prev bg-blue hover:bg-taupe text-taupe hover:text-blue" style="top: calc(50% - 2rem);" aria-label="Previous House" :class="{ 'hidden' : currentIndex === 0}" @click="prev">
+    <button class="absolute left-0 z-20 inline-flex items-center justify-center w-10 h-10 p-3 transition duration-200 md:w-16 md:h-16 prev bg-blue hover:bg-taupe text-taupe hover:text-blue" style="top: calc(50% - 2rem);" aria-label="Previous House" :class="{ 'hidden' : currentIndex === 0}" @click="prev">
       &#10094;
     </button>
-    <button class="absolute right-0 inline-flex items-center justify-center w-16 h-16 p-3 transition duration-200 next bg-blue hover:bg-taupe text-taupe hover:text-blue" style="top: calc(50% - 2rem);" aria-label="Next House" :class="{ 'hidden' : currentIndex === houses.length - 1}" @click="next">
+    <button class="absolute right-0 z-20 inline-flex items-center justify-center w-10 h-10 p-3 transition duration-200 md:w-16 md:h-16 next bg-blue hover:bg-taupe text-taupe hover:text-blue" style="top: calc(50% - 2rem);" aria-label="Next House" :class="{ 'hidden' : currentIndex === houses.length - 1}" @click="next">
       &#10095;
     </button>
   </div>

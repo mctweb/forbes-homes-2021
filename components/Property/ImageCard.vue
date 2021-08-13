@@ -1,6 +1,6 @@
 <template>
-  <section class="relative flex items-center h-full px-20">
-    <section class="z-20 p-12 text-gray-600 bg-gray-200">
+  <section class="relative flex items-center h-full px-12 md:px-16 lg:px-20">
+    <section class="z-20 p-6 py-12 text-gray-600 bg-gray-200 md:p-12">
       <h3 v-if="house.style" class="font-bold">
         {{ house.style }}
       </h3>

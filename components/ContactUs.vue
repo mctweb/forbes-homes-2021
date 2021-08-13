@@ -11,28 +11,28 @@
 
             Your information will not be shared with any third parties.
           </p>
-          <a href="tel:01224 861780" class="flex mt-3 lg:mt-6 hover:text-white">
-            <IconPhone class="w-auto h-6 mr-6 text-gray-300 opacity-50" />01224 861780
+          <a href="tel:01224 861780" class="flex flex-wrap mt-3 lg:mt-6 hover:text-white">
+            <IconPhone class="hidden w-auto h-6 mr-6 text-gray-300 opacity-50 md:inline-block" />01224 861780
           </a>
-          <a href="mailto:enquiries@forbeshomes.co.uk" class="flex mt-3 lg:mt-6 hover:text-white">
-            <IconEmail class="w-auto h-5 mr-6 text-gray-300 opacity-50" />enquiries@forbeshomes.co.uk
+          <a href="mailto:enquiries@forbeshomes.co.uk" class="flex flex-wrap mt-3 lg:mt-6 hover:text-white">
+            <IconEmail class="hidden w-auto h-5 mr-6 text-gray-300 opacity-50 md:inline-block" />enquiries@forbeshomes.co.uk
           </a>
         </section>
         <form class="flex flex-col w-full md:w-1/2" @submit.prevent>
-          <div class="flex flex-wrap items-center mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group">
-            <label for="name" class="inline-block pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100">Name</label>
+          <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
+            <label for="name" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block">Name</label>
             <input id="name" v-model="contact.name" type="text" required class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300">
           </div>
-          <div class="flex flex-wrap items-center mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group">
-            <label for="email" class="inline-block pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100">Email</label>
+          <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
+            <label for="email" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block">Email</label>
             <input id="email" v-model="contact.email" type="email" class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300" required>
           </div>
 
-          <div class="flex flex-wrap items-center mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group">
-            <label for="telephone" class="inline-block pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100">Telephone</label>
+          <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
+            <label for="telephone" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block">Telephone</label>
             <input id="telephone" v-model="contact.telephone" type="tel" class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300" required>
           </div>
-          <div class="flex flex-wrap border-b-2 border-taupe focus-within:border-white hover:border-white group">
+          <div class="flex flex-wrap w-full border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
             <label for="message" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 hover:border-white">Message</label>
             <textarea v-model="contact.message" class="flex-1 w-full px-4 pt-3 pb-2 text-gray-700 bg-gray-300 h-72 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300" rows="8" />
           </div>

@@ -60,7 +60,7 @@
     <component :is="home.siteLayout" class="max-h-screen pb-32 mx-auto" :selectedplot="home.plot" />
     <MapsSingle :location="home.mapLocation" />
     <section class="flex flex-wrap p-12 md:py-20 lg:py-32">
-      <SectionTextCard v-for="{title, description} in home.location" :key="title" class="w-full max-w-sm p-6 mx-auto md:w-1/3" :title="title">
+      <SectionTextCard v-for="{title, description} in home.location" :key="title" class="w-full max-w-sm py-6 mx-auto md:p-6 md:w-1/3" :title="title">
         {{ description }}
       </SectionTextCard>
     </section>

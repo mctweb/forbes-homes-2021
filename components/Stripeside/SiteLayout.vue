@@ -3,7 +3,7 @@
     <h4 class="absolute font-serif text-3xl uppercase left-12 top-12 text-blue md:text-2xl lg:text-4xl afterline">
       Siteplan
     </h4>
-    <svg viewBox="0 0 3443 2120" class="max-h-screen mx-auto mb-32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 3443 2120" class="pt-24 mx-auto md:pt-0 md:mb-32 md:max-h-screen" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="Siteplan">
         <mask
           id="mask0"

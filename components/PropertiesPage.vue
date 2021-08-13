@@ -1,7 +1,7 @@
 <template>
   <div>
     <SectionTopBlue v-for="{development, area, city, mainImages, houses} in developments.slice(0,1)" :key="development">
-      <h1 v-if="$slots.header" class="pt-6 mb-12 text-3xl text-right text-white text-opacity-50 md:text-3xl lg:text-4xl ">
+      <h1 v-if="$slots.header" class="pt-6 mb-12 text-xl text-right text-white text-opacity-50 md:text-3xl lg:text-4xl ">
         <slot name="header" />
       </h1>
       <div class="flex flex-wrap items-end justify-between w-full my-12">
