@@ -3,8 +3,7 @@
     <SectionTopBlue>
       <PageHeader>Why Forbes Homes?</PageHeader>
       <HeaderImageHero title="About Forbes Homes" image="/stripeside/Stripeside-25.png">
-        Get the advantages of using a family-run housing company with high standards.
-      </HeaderImageHero>
+Forbes Homes is a family-run housebuilder committed to delivering new homes for sale across the North East of Scotland.</HeaderImageHero>
       <div class="flex flex-wrap items-center w-full pt-12">
         <div class="order-2 w-full md:w-2/5 md:h-auto md:order-1">
           <nuxt-img preset="medium" src="/deeview/Cults.png" class="object-cover w-full h-72 md:h-96" />
