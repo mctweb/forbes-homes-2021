@@ -2,13 +2,13 @@
   <div class="relative w-full ">
     <div class="relative z-10 flex items-center px-12 py-32 mr-auto md:px-16 lg:px-24 bg-blue bg-opacity-80">
       <section class="flex flex-col justify-start py-20">
-        <h4 class="max-w-2xl py-5 text-2xl text-gray-200">
+        <header class="max-w-2xl py-5 text-2xl text-gray-200">
           <slot />
-        </h4>
+        </header>
         <slot name="footer" />
       </section>
     </div>
-    <nuxt-img :src="image" class="absolute inset-0 z-0 object-cover w-full h-full" />
+    <nuxt-img :src="image" class="absolute inset-0 z-0 object-cover w-full h-full" alt="Forbes Homes" />
   </div>
 </template>
 

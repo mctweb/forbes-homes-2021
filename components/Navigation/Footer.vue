@@ -3,7 +3,7 @@
     <ContactUs />
     <section class="flex flex-wrap items-center justify-between px-12 py-3 md:px-16 lg:px-20">
       <div class="w-full py-8 md:flex-1">
-        <nuxt-img src="/images/nhbc-logo.png" width="245" height="108" class="w-auto h-20 mx-auto md:mr-auto md:ml-0 md:h-24" />
+        <nuxt-img src="/images/nhbc-logo.png" width="245" height="108" class="w-auto h-20 mx-auto md:mr-auto md:ml-0 md:h-24" alt="NHBC Logo" />
       </div>
       <div class="flex-1 py-8">
         <ul class="text-sm text-right md:text-base ">

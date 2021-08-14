@@ -1,7 +1,7 @@
 <template>
   <div class="z-40 w-full shadow-lg h-30 z-100 bg-blue">
     <nav class="relative z-20 flex items-center justify-between w-full px-6 pt-3 border-b-4 border-gray-300 md:items-end border-opacity-10">
-      <nuxt-link to="/" name="Home">
+      <nuxt-link to="/" name="Home" aria-label="Forbes Homes">
         <LogoWhite class="inline-block w-24 h-auto px-2 py-4 mx-2 my-auto" />
         <span class="hidden">Homepage</span>
       </nuxt-link>

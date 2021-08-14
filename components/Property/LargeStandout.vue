@@ -18,7 +18,7 @@
         </NuxtButton>
       </section>
     </div>
-    <nuxt-img :src="development.backimage" class="absolute inset-0 z-0 object-cover w-full h-full" />
+    <nuxt-img :src="development.backimage" class="absolute inset-0 z-0 object-cover w-full h-full" :alt="development.development" />
   </div>
 </template>
 

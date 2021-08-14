@@ -43,6 +43,7 @@
               loading="lazy"
               :preset="preset"
               class="w-full h-auto bg-white"
+              alt="Forbes Homes"
             />
           </div>
 

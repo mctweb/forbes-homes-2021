@@ -2,7 +2,14 @@
   <header class="relative w-full h-screen p-6 overflow-hidden md:p-12 bg-blue">
     <div class="flex flex-wrap justify-start w-full col md:flex-row md:justify-between">
       <section class="z-10 w-3/5 mx-auto mt-16 md:w-auto lg:order-2 lg:m-0 lg:pt-12 lg:pr-12 md:max-w-sm md:ml-auto md:mb-auto">
-        <nuxt-img src="/stripeside/StripesideLogoLight.png" class="object-contain w-full h-auto md:w-72" height="845" width="2077" sizes="sm:100vw md:50vw lg:400px" />
+        <nuxt-img
+          src="/stripeside/StripesideLogoLight.png"
+          class="object-contain w-full h-auto md:w-72"
+          alt="Stripeside Homes"
+          height="845"
+          width="2077"
+          sizes="sm:100vw md:50vw lg:400px"
+        />
       </section>
       <section class="z-10 flex flex-col items-center w-4/5 mx-auto mt-8 text-white uppercase lg:block lg:m-0 md:w-full lg:w-1/2 md:mt-6 lg:mt-52 xl:mt-60 md:pl-12 lg:order-1 ">
         <h1 class="max-w-lg mx-auto text-xl leading-none tracking-tight text-center sm:text-3xl lg:text-left md:max-w-xl lg:text-4xl lg:max-w-xl lg:m-0">
@@ -13,7 +20,14 @@
         </NuxtButton>
       </section>
     </div>
-    <nuxt-picture src="/stripeside/StripesideFarm.png" preset="cover" width="2300" height="2000" class="nuxtpicture" />
+    <nuxt-picture
+      src="/stripeside/StripesideFarm.png"
+      preset="cover"
+      width="2300"
+      height="2000"
+      class="nuxtpicture"
+      alt="Stripeside, Netherley"
+    />
   </header>
 </template>
 

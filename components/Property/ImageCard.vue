@@ -14,7 +14,7 @@
         View Property
       </NuxtButton>
     </section>
-    <nuxt-img preset="large" :src="house.image" class="absolute inset-0 object-cover w-full h-full" />
+    <nuxt-img preset="large" :src="house.image" class="absolute inset-0 object-cover w-full h-full" :alt="'Plot ' + house.plot" />
   </section>
 </template>
 

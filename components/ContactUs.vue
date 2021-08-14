@@ -34,7 +34,7 @@
           </div>
           <div class="flex flex-wrap w-full border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
             <label for="message" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 hover:border-white">Message</label>
-            <textarea v-model="contact.message" class="flex-1 w-full px-4 pt-3 pb-2 text-gray-700 bg-gray-300 h-72 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300" rows="8" />
+            <textarea id="message" v-model="contact.message" class="flex-1 w-full px-4 pt-3 pb-2 text-gray-700 bg-gray-300 h-72 focus:outline-none focus:bg-gray-900 group-hover:bg-gray-400 focus:text-gray-300" rows="8" />
           </div>
           <NuxtButton class="mt-6 ml-auto" light @click="submitForm">
             Send Enquiry

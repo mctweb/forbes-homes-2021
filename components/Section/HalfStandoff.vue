@@ -10,7 +10,7 @@
       </NuxtButton>
     </section>
     <aside class="w-full md:w-1/2" :class="{ 'md:order-1' : flip}">
-      <nuxt-img :src="image" preset="large" class="object-cover w-full h-full" />
+      <nuxt-img :src="image" preset="large" class="object-cover w-full h-full" :alt="title" />
     </aside>
   </article>
 </template>
