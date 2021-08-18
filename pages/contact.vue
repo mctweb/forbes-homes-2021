@@ -1,7 +1,6 @@
 <template>
   <div class="">
     <SectionTopBlue title="Get In Touch" class="pt-16 pb-6 " />
-    <ContactFull large />
   </div>
 </template>
 
@@ -9,7 +8,6 @@
 
 import { getSiteMeta } from '~/utils/getSiteMeta'
 export default {
-  layout: 'contact',
 
   head () {
     return {
