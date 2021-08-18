@@ -48,7 +48,7 @@ export default {
         const match = this.$router.match(path)
         if (match.name !== null) {
           crumbs.push({
-            title: param.replace(/-/g, ' '),
+            title: param.replace(/-/g, ' ').split('?')[0],
             ...match
           })
         }

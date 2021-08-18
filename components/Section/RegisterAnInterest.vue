@@ -29,7 +29,7 @@ export default {
   computed: {
     contactLink () {
       if (!this.development) { return '/contact' }
-      return '/contact?interest=true&development=' + this.development
+      return '/contact?interest=' + this.development
     }
   }
 }

@@ -1,19 +1,16 @@
 <template>
-  <SectionTopBlue title="Get In Touch">
-    <h1 class="text-4xl">
-      To Be Completed
-    </h1>
-  </SectionTopBlue>
+  <div class="">
+    <SectionTopBlue title="Get In Touch" class="pt-16 pb-6 " />
+    <ContactFull large />
+  </div>
 </template>
 
 <script>
+
 import { getSiteMeta } from '~/utils/getSiteMeta'
 export default {
-  data () {
-    return {
-      interested: []
-    }
-  },
+  layout: 'contact',
+
   head () {
     return {
       ...this.meta
@@ -28,14 +25,7 @@ export default {
       }
       return getSiteMeta(metaData)
     }
-  },
-  mounted () {
-    this.getInformation()
-  },
-  methods: {
-    getInformation () {
-      this.interested.push(this.$route.query.development)
-    }
+
   }
 
 }

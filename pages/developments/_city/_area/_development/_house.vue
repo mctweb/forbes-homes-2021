@@ -21,12 +21,12 @@
       </div>
       <div class="flex flex-wrap items-center w-full my-12">
         <div class="flex flex-col w-full md:pr-3 md:w-1/2 ">
-          <NuxtButton class="self-stretch w-full" :to="`/contact?interest=true&development=${development.development}&plot=${home.plot}`" light>
+          <NuxtButton class="self-stretch w-full" :to="`/contact?interest=${development.development}&plot=${home.plot}`" light>
             Register An Interest
           </NuxtButton>
         </div>
         <div class="flex flex-col w-full pt-3 md:pl-3 md:pt-0 md:w-1/2">
-          <NuxtButton class="self-stretch" :to="`/contact?appointment=true&development=${development.development}&plot=${home.plot}`" light>
+          <NuxtButton class="self-stretch" :to="`/contact?appointment=${development.development}&plot=${home.plot}`" light>
             Book An Appointment
           </NuxtButton>
         </div>
