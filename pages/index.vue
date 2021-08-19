@@ -14,8 +14,12 @@
         </div>
         <SectionHalfStandoff title="Find your forever home, today." class="pt-6 md:pt-12" image="/stripeside/atrium.png">
           <template #main>
-            We have contracted Forbes Homes many times over the past 30 years on a variety building and renovation projects. Being a small family business, we have always found them to be very conscientious and thorough in their work with excellent attention to detail.<br>
-            We would happily recommend them as a trustworthy and sensibly priced construction company that offers sound advice on every project they have undertaken for us.
+            <div class="relative">
+              <QuotationMark class="absolute top-0 left-0 w-auto h-16 -mt-8 -ml-8 md:h-24 lg:h-32 opacity-10" />
+              <QuotationMark class="absolute bottom-0 right-0 w-auto h-16 -mb-8 -mr-8 transform rotate-180 md:h-24 lg:h-32 opacity-10" />
+              We have contracted Forbes Homes many times over the past 30 years on a variety building and renovation projects. Being a small family business, we have always found them to be very conscientious and thorough in their work with <span class="font-bold">excellent attention to detail.</span><br>
+              We would happily recommend them as a trustworthy and sensibly priced construction company that offers sound advice on every project they have undertaken for us.
+            </div>
           </template>
         </SectionHalfStandoff>
         <SectionHalfStandoff title="Timeless design & premium materials" image="/stripeside/StripesideBack.png" :button="{to:'/developments', text: 'View Properties'}">
