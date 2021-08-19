@@ -53,7 +53,8 @@ export default {
   googleFonts: {
     families: {
       Amiko: [400]
-    }
+    },
+    display: 'swap'
   },
   image: {
     presets: {
