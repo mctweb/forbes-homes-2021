@@ -15,7 +15,7 @@
           </p>
         </div>
         <div v-if="quote.profile" class="w-1/2 ml-12">
-          <nuxt-img :src="quote.profile" :alt="quote.author + ' review of Forbes Homes'" class="w-full h-full " />
+          <nuxt-img :src="quote.profile" :alt="quote.author + ' review of Forbes Homes'" class="w-full h-full " loading="lazy" />
         </div>
       </div>
     </div>

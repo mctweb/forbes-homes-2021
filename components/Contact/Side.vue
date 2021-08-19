@@ -1,8 +1,8 @@
 <template>
   <section>
-    <h5 class="pb-3 mb-6 font-serif text-3xl text-gray-200 md:text-4xl lg:text-5xl afterline" :class="{'hidden lg:inline-block' : large}">
+    <header class="pb-3 mb-6 font-serif text-3xl text-gray-200 md:text-4xl lg:text-5xl afterline" :class="{'hidden lg:inline-block' : large}">
       Get In Touch
-    </h5>
+    </header>
     <p class="mb-6 md:mb-12 lg:mb-16">
       We aim to provide you with great customer service and support. We are here to help with any questions that you may have.<br>
 

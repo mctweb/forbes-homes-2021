@@ -11,9 +11,11 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
     "@nuxt/image": "^0.5.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "nuxt-community/sitemap-module#feat/static-crawler",
+    "@sendgrid/mail": "^7.4.6",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "nuxt-gmaps": "^1.2.10"

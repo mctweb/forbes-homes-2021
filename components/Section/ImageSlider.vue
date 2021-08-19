@@ -1,7 +1,14 @@
 <template>
   <div class="relative w-full" style="height: 80vh;">
     <div>
-      <nuxt-img :src="currentImg.src" class="object-cover w-full h-full image" :class="imageClass" :alt="alt + ' ' +currentImg.room" />
+      <nuxt-img
+        :src="currentImg.src"
+        preset="cover"
+        class="object-cover w-full h-full image"
+        :class="imageClass"
+        :alt="alt + ' ' +currentImg.room"
+        loading="lazy"
+      />
     </div>
 
     <button class="absolute left-0 inline-flex items-center justify-center w-16 h-16 p-3 transition duration-200 prev bg-blue hover:bg-white hover:text-blue" style="top: calc(50% - 2rem);" aria-label="Previous Image" :class="{ 'hidden' : currentIndex === 0}" @click="prev">

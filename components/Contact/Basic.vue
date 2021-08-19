@@ -2,16 +2,35 @@
   <section>
     <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
       <label for="name" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block lg:w-40">Name</label>
-      <input id="name" v-model="contactModel.name" type="text" required class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300">
+      <input
+        id="name"
+        v-model="contactModel.name"
+        required
+        type="text"
+
+        class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300"
+      >
     </div>
     <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
       <label for="email" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block lg:w-40">Email</label>
-      <input id="email" v-model="contactModel.email" type="email" class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300" required>
+      <input
+        id="email"
+        v-model="contactModel.email"
+        required
+        type="email"
+        class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300"
+      >
     </div>
 
     <div class="flex flex-wrap items-center w-full mb-2 border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">
       <label for="telephone" class="block w-full pt-3 pb-2 pl-4 pr-12 text-gray-700 uppercase bg-gray-100 md:inline-block lg:w-40">Telephone</label>
-      <input id="telephone" v-model="contactModel.telephone" type="tel" class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300" required>
+      <input
+        id="telephone"
+        v-model="contactModel.telephone"
+        required
+        type="tel"
+        class="flex-1 px-4 pt-3 pb-2 text-gray-700 bg-gray-300 focus:outline-none focus:bg-gray-900 hover:bg-gray-400 focus:text-gray-300"
+      >
     </div>
     <slot />
     <div class="flex flex-wrap w-full border-b-2 border-taupe focus-within:border-white hover:border-white group md:w-auto">

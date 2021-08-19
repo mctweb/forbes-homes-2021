@@ -9,8 +9,17 @@
         {{ button.text }}
       </NuxtButton>
     </section>
-    <aside class="w-full md:w-1/2" :class="{ 'md:order-1' : flip}">
-      <nuxt-img :src="image" preset="large" class="object-cover w-full h-full" :alt="title" />
+    <aside class="w-full md:w-1/2 h60" :class="{ 'md:order-1' : flip}">
+      <nuxt-picture
+        :src="image"
+        class="nuxtpicture"
+        loading="lazy"
+        :alt="title"
+        width="1000"
+        height="850"
+        fit="cover"
+        sizes="sm:600 md:700 lg:900 xl:950 xxl:1000"
+      />
     </aside>
   </article>
 </template>
@@ -38,6 +47,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.nuxtpicture::v-deep img{
+  @apply object-cover w-full h-full ;
+
+}
 
 </style>

@@ -109,7 +109,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/http'
   ],
   sitemap: {
     hostname: 'https://forbeshomes.co.uk',
@@ -117,11 +118,29 @@ export default {
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
+
   pwa: {
+    meta: {
+      name: 'Forbes Homes',
+      description: 'Find your forever home',
+      theme_color: '#002C57'
+    },
     manifest: {
-      lang: 'en'
+      name: 'Forbes Homes',
+      short_name: 'Forbes Homes',
+      background_color: '#F4F4F5',
+      lang: 'en',
+      useWebmanifestExtension: false
     }
   },
+
+  // http: {
+  //   proxy: true // Can be also an object with default options
+  // },
+
+  // proxy: {
+  //   '/api/': '/.netlify/functions/'
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

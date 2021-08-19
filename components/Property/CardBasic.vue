@@ -1,7 +1,14 @@
 <template>
   <article class="flex flex-col">
     <aside class="w-full">
-      <nuxt-img v-if="property && property.image" :src="property.image" preset="medium" class="object-cover w-full h-full" :alt="'Plot ' + property.plot" />
+      <nuxt-img
+        v-if="property && property.image"
+        :src="property.image"
+        preset="medium"
+        class="object-cover w-full h-full"
+        :alt="'Plot ' + property.plot"
+        loading="lazy"
+      />
     </aside>
     <section class="flex flex-col justify-center p-12 mx-auto">
       <p v-if="property.style" class="text-sm font-bold">

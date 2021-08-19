@@ -2,12 +2,13 @@
   <div class="relative w-full ">
     <div class="relative z-10 flex items-center justify-center px-12 py-32 mr-auto md:px-16 lg:px-24 bg-blue bg-opacity-80">
       <section class="flex flex-col items-center justify-center py-20">
-        <nuxt-img
+        <nuxt-picture
           :src="development.logo"
-          class="object-contain w-3/4 h-auto md:w-72 lg:w-96"
-          height="845"
-          width="2077"
+          class="nuxtpicture-logo"
+          height="163"
+          width="400"
           sizes="sm:100vw md:50vw lg:400px"
+          loading="lazy"
           :alt="development.development"
         />
         <p class="pt-12 pb-12 text-gray-300">
@@ -18,7 +19,7 @@
         </NuxtButton>
       </section>
     </div>
-    <nuxt-img :src="development.backimage" class="absolute inset-0 z-0 object-cover w-full h-full" :alt="development.development" />
+    <nuxt-picture :src="development.backimage" class="nuxtpicture" :alt="development.development" loading="lazy" />
   </div>
 </template>
 
@@ -37,3 +38,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.nuxtpicture-logo::v-deep img{
+  @apply object-cover w-full h-full ;
+
+}
+.nuxtpicture::v-deep img{
+  @apply absolute inset-0 z-0 object-cover w-full h-full;
+
+}
+
+</style>

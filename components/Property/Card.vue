@@ -1,7 +1,14 @@
 <template>
   <article class="flex flex-wrap justify-between px-6 pb-6 md:pb-12 md:px-12">
     <aside class="w-full md:w-1/2">
-      <nuxt-img v-if="property.image" :src="property.image" preset="large" class="object-cover w-full h-full" :alt="'Plot ' + property.plot" />
+      <nuxt-img
+        v-if="property.image"
+        :src="property.image"
+        preset="large"
+        class="object-cover w-full h-full"
+        :alt="'Plot ' + property.plot"
+        loading="lazy"
+      />
     </aside>
     <section class="flex flex-col justify-center w-full max-w-xl p-12 pr-16 mx-auto md:w-1/2">
       <p v-if="property.style" class="text-sm font-bold">

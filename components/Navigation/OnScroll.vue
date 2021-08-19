@@ -16,7 +16,7 @@
           <span class="hidden">Open Menu</span>
         </button>
         <div v-for="(item, id) in items" :key="id" class="relative inline-block ml-6 font-thin tracking-widest uppercase transition duration-100 hover:text-blue xl:ml-12 lg:ml-8 menuitem">
-          <NuxtLink :to="item.route" exact-active-class="active">
+          <NuxtLink :to="item.route" exact-active-class="active" :active-class="item.title === 'Home' ? '' : 'active'">
             {{ item.title }}
           </NuxtLink>
         </div>
@@ -76,7 +76,7 @@ export default {
     .menuitems, .menuitems.open{
         @apply flex relative bg-transparent h-auto w-auto flex-row mx-6 pb-2 pr-2 ml-auto text-sm px-6;
     }
-    .menuitems .menuitem::after{
+    .menuitems .menuitem a::after{
         @apply absolute  left-0 right-0 bg-white bg-opacity-0 transition duration-300;
         content: '';
         bottom: -12px;
@@ -86,14 +86,17 @@ export default {
         width: calc(100% + 3rem);
     }
 
-    .menuitems .menuitem a.active::after, .menuitems .menuitem a.active:hover::after{
-        @apply bg-taupe;
-    }
     .menuitems .menuitem a::after{
         @apply  bg-blue bg-opacity-0 ;
     }
-    .menuitems .menuitem a:hover::after{
-        @apply bg-opacity-100;
+    .menuitems .menuitem:hover a::after{
+        @apply bg-opacity-100 bg-taupe;
+    }
+    .menuitems .menuitem a.active::after {
+      @apply bg-opacity-100 bg-taupe;
+    }
+        .menuitems .menuitem:hover a.active::after {
+      @apply bg-opacity-100 bg-blue;
     }
 
     .navbar{

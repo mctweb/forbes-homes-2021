@@ -8,7 +8,7 @@
 
       <ul class="items-center hidden w-auto pb-2 pr-2 ml-auto text-sm menuitems md:flex">
         <li v-for="(item, id) in items" :key="id" class="relative inline-block ml-6 font-thin tracking-widest text-gray-200 uppercase transition duration-100 hover:text-white xl:ml-12 lg:ml-8">
-          <NuxtLink :to="item.route" exact-active-class="active">
+          <NuxtLink :to="item.route" exact-active-class="active" :active-class="item.title === 'Home' ? '' : 'active'">
             {{ item.title }}
           </NuxtLink>
         </li>
