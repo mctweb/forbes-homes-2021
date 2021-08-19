@@ -14,8 +14,8 @@ exports.handler = async (event, context, callback) => {
 
   // configure email
   const msg = {
-    from: 'Website Enquiry <no-reply@forbeshomes.co.uk>',
-    to: 'assistmanager@mainsofdrum.co.uk',
+    from: 'Forbes Homes Website Enquiry <no-reply@forbeshomes.co.uk>',
+    to: 'Forbes Homes <enquiries@forbeshomes.co.uk>',
     templateId: 'd-dbaafd5dfed649f8b254020d90adaf79',
     dynamic_template_data: incomingdata
   }
