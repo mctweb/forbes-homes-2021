@@ -18,7 +18,7 @@
         width="1000"
         height="850"
         fit="cover"
-        sizes="sm:600 md:700 lg:900 xl:950 xxl:1000"
+        sizes="sm:500 md:600 lg:750 xl:900 xxl:1000"
       />
     </aside>
   </article>

@@ -21,19 +21,19 @@
       </section>
     </div>
     <nuxt-picture
-      src="/stripeside/StripesideFarm.png"
-      preset="cover"
+      src="/stripeside/StripesideFarmWide.png"
       width="2300"
-      height="2000"
+      height="1400"
       fit="cover"
       sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
-      class="nuxtpicture"
+      class="nuxtpicture "
       alt="Stripeside, Netherley"
     />
   </header>
 </template>
 
 <style scoped>
+
 .nuxtpicture::v-deep img{
   @apply object-bottom object-cover w-full h-full absolute inset-0 z-0 p-6 md:p-12;
 }

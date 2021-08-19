@@ -13,7 +13,8 @@
           </NuxtButton>
         </div>
         <SectionHalfStandoff title="Find your forever home, today." class="pt-6 md:pt-12" image="/stripeside/atrium.png">
-          “Forbes Homes are not your average building company - they are a long standing family run company with their roots firmly in the North East of Scotland. They take a real pride in their work whether it be new build ( commercial and residential ) or renovations / extensions . Their experienced team of specialists covers all trades and the quality of workmanship is second to none . I have no hesitation in recommending their services .“
+          We have contracted Forbes Homes many times over the past 30 years on a variety building and renovation projects. Being a small family business, we have always found them to be very conscientious and thorough in their work with excellent attention to detail.<br>
+          We would happily recommend them as a trustworthy and sensibly priced construction company that offers sound advice on every project they have undertaken for us.
         </SectionHalfStandoff>
         <SectionHalfStandoff title="Timeless design & premium materials" image="/stripeside/StripesideBack.png" :button="{to:'/developments', text: 'View Properties'}">
           We pride ourselves with a personal service and first class attention to detail, ensuring you will be delighted with your new home.
