@@ -1,11 +1,14 @@
 <template>
   <article class="flex flex-wrap justify-between px-6 pb-6 md:pb-12 md:px-12">
     <aside class="w-full md:w-1/2">
-      <nuxt-img
+      <nuxt-picture
         v-if="property.image"
         :src="property.image"
-        preset="large"
-        class="object-cover w-full h-full"
+        width="2300"
+        height="1400"
+        fit="cover"
+        sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+        class="nuxtpicture"
         :alt="'Plot ' + property.plot"
         loading="lazy"
       />
@@ -44,3 +47,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.nuxtpicture::v-deep img{
+  @apply object-cover w-full h-full;
+}
+
+</style>

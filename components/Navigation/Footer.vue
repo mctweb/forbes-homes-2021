@@ -2,11 +2,11 @@
   <div class="text-gray-300 bg-blue">
     <section class="flex flex-wrap items-center justify-between px-12 py-3 md:px-16 lg:px-20">
       <div class="w-full py-8 md:flex-1">
-        <nuxt-img
+        <nuxt-picture
           src="/images/nhbc-logo.png"
           width="245"
           height="108"
-          class="w-auto h-20 mx-auto md:mr-auto md:ml-0 md:h-24"
+          class="nuxtpicture"
           alt="NHBC Logo"
           loading="lazy"
         />
@@ -58,6 +58,10 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped>
+
+.nuxtpicture::v-deep img{
+  @apply w-auto h-20 mx-auto md:mr-auto md:ml-0 md:h-24;
+}
 
 </style>

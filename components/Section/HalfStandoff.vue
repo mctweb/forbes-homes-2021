@@ -5,6 +5,7 @@
         {{ title }}
       </header>
       <p><slot /></p>
+      <slot name="main" />
       <NuxtButton v-if="button && button.to" light :to="button.to" class="self-start mt-3">
         {{ button.text }}
       </NuxtButton>

@@ -19,7 +19,16 @@
         </NuxtButton>
       </section>
     </div>
-    <nuxt-picture :src="development.backimage" class="nuxtpicture" :alt="development.development" loading="lazy" />
+    <nuxt-picture
+      :src="development.backimage"
+      width="2300"
+      height="1400"
+      fit="cover"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+      class="nuxtpicture"
+      :alt="development.development"
+      loading="lazy"
+    />
   </div>
 </template>
 

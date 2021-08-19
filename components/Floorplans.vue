@@ -2,7 +2,16 @@
   <div class="">
     <div class="flex flex-wrap p-12 bg-white">
       <div v-for="(plan, i) in plans" :key="i" class="w-full mx-auto md:w-1/2 lg:w-1/3" @click="viewImages(i)">
-        <nuxt-img :src="plan" preset="large" class="w-full h-auto transition-transform duration-300 transform cursor-pointer hover:scale-105" alt="Forbes Homes" loading="lazy" />
+        <nuxt-picture
+          :src="plan"
+          width="1200"
+          height="1000"
+          fit="cover"
+          sizes="sm:600 md:700 lg:900 xl:1000 xxl:1400"
+          class="nuxtpicture"
+          alt="Forbes Homes"
+          loading="lazy"
+        />
       </div>
     </div>
     <GalleryModal v-if="imageGallery" :data="plansArray" :start-at="startAt" preset="largesq" @close="closeGallery" />
@@ -41,6 +50,9 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped>
+.nuxtpicture::v-deep img{
+  @apply w-full h-auto transition-transform duration-300 transform cursor-pointer hover:scale-105;
 
+}
 </style>

@@ -13,8 +13,10 @@
           </NuxtButton>
         </div>
         <SectionHalfStandoff title="Find your forever home, today." class="pt-6 md:pt-12" image="/stripeside/atrium.png">
-          We have contracted Forbes Homes many times over the past 30 years on a variety building and renovation projects. Being a small family business, we have always found them to be very conscientious and thorough in their work with excellent attention to detail.<br>
-          We would happily recommend them as a trustworthy and sensibly priced construction company that offers sound advice on every project they have undertaken for us.
+          <template #main>
+            We have contracted Forbes Homes many times over the past 30 years on a variety building and renovation projects. Being a small family business, we have always found them to be very conscientious and thorough in their work with excellent attention to detail.<br>
+            We would happily recommend them as a trustworthy and sensibly priced construction company that offers sound advice on every project they have undertaken for us.
+          </template>
         </SectionHalfStandoff>
         <SectionHalfStandoff title="Timeless design & premium materials" image="/stripeside/StripesideBack.png" :button="{to:'/developments', text: 'View Properties'}">
           We pride ourselves with a personal service and first class attention to detail, ensuring you will be delighted with your new home.

@@ -1,10 +1,13 @@
 <template>
   <div class="relative w-full" style="height: 80vh;">
     <div>
-      <nuxt-img
+      <nuxt-picture
         :src="currentImg.src"
-        preset="cover"
-        class="object-cover w-full h-full image"
+        width="2300"
+        height="1400"
+        fit="cover"
+        sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+        class="nuxtpicture"
         :class="imageClass"
         :alt="alt + ' ' +currentImg.room"
         loading="lazy"
@@ -70,19 +73,20 @@ export default {
 </script>
 
 <style scoped>
-.image.fade-in {
-  transition: all 0.9s ease;
+
+.nuxtpicture::v-deep img{
+  @apply absolute inset-0 object-cover w-full h-full;
+    visibility: hidden;
+  width:100%;
+  opacity: 0;
+}
+.nuxtpicture.fade-in::v-deep img{
+ transition: all 0.9s ease;
   overflow: hidden;
   visibility: visible;
   position: absolute;
   width:100%;
   opacity: 1;
-}
-
-.image {
-  visibility: hidden;
-  width:100%;
-  opacity: 0;
 }
 
 </style>

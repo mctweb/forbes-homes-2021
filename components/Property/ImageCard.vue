@@ -14,7 +14,16 @@
         View Property
       </NuxtButton>
     </section>
-    <nuxt-img preset="large" :src="house.image" class="absolute inset-0 object-cover w-full h-full" :alt="'Plot ' + house.plot" loading="lazy" />
+    <nuxt-picture
+      width="2300"
+      height="1400"
+      fit="cover"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+      :src="house.image"
+      class="nuxtpicture"
+      :alt="'Plot ' + house.plot"
+      loading="lazy"
+    />
   </section>
 </template>
 
@@ -36,6 +45,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.nuxtpicture::v-deep img{
+  @apply absolute inset-0 object-cover w-full h-full;
 
+}
 </style>

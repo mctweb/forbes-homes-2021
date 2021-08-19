@@ -37,12 +37,15 @@
           </button>
 
           <div class="modal__image">
-            <nuxt-img
+            <nuxt-picture
               v-if="activeItem"
               :src="activeItem.src"
               loading="lazy"
-              :preset="preset"
-              class="w-full h-auto bg-white"
+              width="1600"
+              height="1200"
+              fit="cover"
+              sizes="sm:600 md:700 lg:1000 xl:1200 xxl:1600"
+              class="nuxtpicture"
               alt="Forbes Homes"
             />
           </div>
@@ -231,7 +234,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .appear {
   animation: fadein 4s;
 }
@@ -243,9 +246,7 @@ export default {
     opacity: 1;
   }
 }
-body.modal-open {
-  overflow: hidden;
-}
+
 .modal__wrap {
   display: flex;
   flex-direction: column;
@@ -265,7 +266,9 @@ body.modal-open {
 .top-half {
   top: 50%;
 }
-/* .modal__image.lazyloading {
-  background: url('~assets/loader.svg') no-repeat center;
-} */
+
+.nuxtpicture::v-deep img{
+  @apply w-full h-auto bg-white;
+
+}
 </style>

@@ -7,7 +7,15 @@
       </HeaderImageHero>
       <div class="flex flex-wrap items-center w-full pt-12">
         <div class="order-2 w-full md:w-2/5 md:h-auto md:order-1">
-          <nuxt-img preset="medium" src="/deeview/Cults.png" class="object-cover w-full h-72 md:h-96" alt="Forbes Homes" />
+          <nuxt-picture
+            width="750"
+            height="650"
+            fit="cover"
+            sizes="sm:400 md:400 lg:400 xl:600"
+            src="/deeview/Cults.png"
+            class="nuxtpicture"
+            alt="Forbes Homes"
+          />
         </div>
         <SectionTextCard title="Building Dreams" class="flex-1 order-1 max-w-xl pb-12 mx-auto md:pl-12 md:py-0 md:order-2" blue>
           We don’t build houses, we build homes. Homes that look, feel, and work perfectly for modern day living.
@@ -98,7 +106,9 @@ export default {
 
 }
 </script>
+<style scoped>
+.nuxtpicture::v-deep img{
+  @apply object-cover w-full h-72 md:h-96;
 
-<style>
-
+}
 </style>

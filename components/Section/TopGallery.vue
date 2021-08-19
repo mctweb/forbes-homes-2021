@@ -2,7 +2,10 @@
   <article>
     <div class="max-h-screen cursor-pointer" @click="viewImages(0)">
       <nuxt-picture
-        preset="cover"
+        width="1600"
+        height="1300"
+        fit="cover"
+        sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
         class="nuxtpicture max"
         :src="images[0].src"
         :alt="development + ' - ' +images[0].room"
@@ -12,12 +15,24 @@
 
     <div v-if="images.length > 1" class="grid gap-3 pt-3 md:grid-cols-2 md:gap-6 md:pt-6">
       <div class="cursor-pointer" @click="viewImages(1)">
-        <nuxt-picture preset="cover" class="nuxtpicture" :src="images[1].src" :alt="development + ' - ' +images[1].room" loading="lazy" />
+        <nuxt-picture
+          width="900"
+          height="900"
+          fit="cover"
+          sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+          class="nuxtpicture"
+          :src="images[1].src"
+          :alt="development + ' - ' +images[1].room"
+          loading="lazy"
+        />
       </div>
       <div class="grid grid-rows-3 gap-3 md:gap-6">
-        <div class="max-h-screen row-span-2 cursor-pointer" @click="viewImages(2)">
+        <div class="row-span-2 cursor-pointer " @click="viewImages(2)">
           <nuxt-picture
-            preset="cover"
+            width="900"
+            height="600"
+            fit="cover"
+            sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
             class="nuxtpicture"
             :src="images[2].src"
             :alt="development + ' - ' + images[2].room"
@@ -27,10 +42,28 @@
         </div>
         <div class="grid grid-cols-2 gap-3 md:gap-6">
           <div class="max-h-screen cursor-pointer" @click="viewImages(3)">
-            <nuxt-picture preset="cover" class="nuxtpicture" :src="images[3].src" :alt="development + ' - ' +images[3].room" loading="lazy" />
+            <nuxt-picture
+              width="500"
+              height="300"
+              fit="cover"
+              sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+              class="nuxtpicture"
+              :src="images[3].src"
+              :alt="development + ' - ' +images[3].room"
+              loading="lazy"
+            />
           </div>
           <div class="max-h-screen cursor-pointer" @click="viewImages(4)">
-            <nuxt-picture preset="cover" class="nuxtpicture" :src="images[4].src" :alt="development + ' - ' +images[4].room" loading="lazy" />
+            <nuxt-picture
+              width="500"
+              height="300"
+              fit="cover"
+              sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+              class="nuxtpicture"
+              :src="images[4].src"
+              :alt="development + ' - ' +images[4].room"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

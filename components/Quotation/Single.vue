@@ -15,7 +15,7 @@
           </p>
         </div>
         <div v-if="quote.profile" class="w-1/2 ml-12">
-          <nuxt-img :src="quote.profile" :alt="quote.author + ' review of Forbes Homes'" class="w-full h-full " loading="lazy" />
+          <nuxt-picture :src="quote.profile" :alt="quote.author + ' review of Forbes Homes'" class="nuxtpicture " loading="lazy" />
         </div>
       </div>
     </div>
@@ -40,6 +40,9 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped>
 
+.nuxtpicture::v-deep img{
+  @apply w-full h-full;
+}
 </style>

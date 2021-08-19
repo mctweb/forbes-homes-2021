@@ -3,7 +3,15 @@
     <section class="relative z-10">
       <slot />
     </section>
-    <nuxt-picture :src="image" preset="cover" class="nuxtpicture" :class="stick" />
+    <nuxt-picture
+      :src="image"
+      width="2300"
+      height="1400"
+      fit="cover"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+      class="nuxtpicture"
+      :class="stick"
+    />
   </header>
 </template>
 

@@ -4,7 +4,15 @@
       <slot />
     </div>
     <div class="absolute inset-0 z-10 bg-blue bg-opacity-70" />
-    <nuxt-img :src="image" class="absolute object-cover w-full h-full" :alt="title" preset="large" />
+    <nuxt-picture
+      :src="image"
+      class="nuxtpicturehero"
+      :alt="title"
+      width="2300"
+      height="1400"
+      fit="cover"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+    />
   </div>
 </template>
 
@@ -22,3 +30,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.nuxtpicturehero::v-deep img{
+  @apply absolute object-cover w-full h-full inset-0;
+
+}
+</style>

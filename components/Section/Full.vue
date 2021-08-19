@@ -8,7 +8,16 @@
         <slot name="footer" />
       </section>
     </div>
-    <nuxt-picture :src="image" class="nuxtpicture" alt="Forbes Homes" loading="lazy" />
+    <nuxt-picture
+      :src="image"
+      width="2300"
+      height="1400"
+      fit="cover"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+      class="nuxtpictured"
+      alt="Forbes Homes"
+      loading="lazy"
+    />
   </div>
 </template>
 
@@ -23,9 +32,16 @@ export default {
 }
 </script>
 
-<style  scoped>
-.nuxtpicture::v-deep img{
+<style scoped>
+.nuxtpictured::v-deep img{
   @apply absolute inset-0 z-0 object-cover w-full h-full;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
+}
+.nuxtpictured{
+  @apply absolute inset-0 z-0 object-cover w-full h-full;
 }
 </style>
