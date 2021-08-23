@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-wrap justify-between px-6 pb-6 md:pb-12 md:px-12">
+  <article class="flex flex-wrap justify-between px-6 md:px-12">
     <aside class="w-full md:w-1/2">
       <nuxt-picture
         v-if="property.image"
@@ -19,6 +19,9 @@
       </p>
       <p class="pb-3 font-serif text-2xl lg:text-4xl">
         {{ ' Plot' + property.plot }}
+      </p>
+      <p class="self-start inline-block px-3 pt-2 pb-1 mb-2 text-sm text-gray-800 bg-gray-200 border border-gray-400 border-opacity-30">
+        {{ property.status }}
       </p>
       <p>
         {{ property.brief }}

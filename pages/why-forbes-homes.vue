@@ -63,7 +63,7 @@ export default {
       advantages: [
         {
           title: 'Find Your Forever Home',
-          body: 'All our homes feature solid wood oak finishings, traditional coving, Nobilia kitchens with integrated appliances, and Kohler and Roca bathrooms to tailor your home to perfection.',
+          body: 'All our homes feature solid wood oak finishings, Nobilia kitchens with integrated appliances, and high specification bathrooms including full height tiling to tailor your home to perfection.',
           image: '/deeview/stairs.png',
           button: null
         },
@@ -75,7 +75,7 @@ export default {
         },
         {
           title: 'Landscaping',
-          body: 'We know how important your new home is to you and we want to help you settle in as soon as you can and take full advantage of your home and surroundings.By chosing a new build with Forbes Homes you benefit from our pre-landscaped gardens including driveways, turf, plants, feature rockery and hardwood decking areas.',
+          body: 'We know how important your new home is to you and we want to help you settle in as soon as you can and take full advantage of your home and surroundings.By chosing a new build with Forbes Homes you benefit from our pre-landscaped gardens including driveways, patio areas, lawns, plants, trees, feature rockery.',
           image: '/stripeside/Stripeside-25.png',
           button: null
         },

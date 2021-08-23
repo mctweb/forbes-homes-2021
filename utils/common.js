@@ -22,6 +22,18 @@ export function availableHouses (array) {
   })
 }
 
+export function currentlyAvailableHouses (array) {
+  return array.filter(x => x.status === 'Available' || x.status === 'Viewing Home').sort((a, b) => {
+    if (a.status === 'Available' && b.status === 'Future Release') {
+      return -1
+    }
+    if (a.status === 'Future Release' && b.status === 'Available') {
+      return 1
+    }
+    return 0
+  })
+}
+
 export function amountAvailableNow (array) {
   return array.filter(x => x.status === 'Available' || x.status === 'Viewing Home').length
 }

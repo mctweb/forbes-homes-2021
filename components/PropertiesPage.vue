@@ -46,7 +46,7 @@
           {{ development.development }}
         </h2>
       </section>
-      <SectionHouseSlider :houses="development.houses" />
+      <SectionHouseSlider :houses="availableHouses(development.houses)" />
       <SectionSimpleText>
         <p>{{ development.brief }}</p>
         <NuxtButton class="mt-6 text-white" :to="'/developments/' + development.city.toLowerCase() + '/' + development.area.toLowerCase() +'/' + development.development.toLowerCase()">
@@ -54,22 +54,24 @@
         </NuxtButton>
       </SectionSimpleText>
       <PropertyImageTile :development="development" class="mb-12 md:mb-16 lg:mb-20" />
-      <component :is="development.siteLayout" v-if="development.siteLayout" class="max-h-screen pb-32 mx-auto" />
+      <component :is="development.siteLayout" v-if="development.siteLayout" class="mx-auto " />
     </article>
   </div>
 </template>
 
 <script>
+import { currentlyAvailableHouses } from '~/utils/common'
 export default {
   props: {
     developments: {
       type: Array,
       default: () => []
     }
+  },
+  methods: {
+    availableHouses (houses) {
+      return currentlyAvailableHouses(houses)
+    }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

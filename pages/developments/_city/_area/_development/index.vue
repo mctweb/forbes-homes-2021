@@ -11,8 +11,8 @@
           </h2>
         </header>
         <aside>
-          <p class="font-bold">
-            Only {{ amountAvailable }} properties available
+          <p class="pl-3 font-bold text-right">
+            Currently {{ amountAvailable }} properties available
           </p>
           <p>{{ development.type }} in {{ development.city }}</p>
         </aside>
@@ -21,9 +21,11 @@
     </SectionTopBlue>
     <SectionSimpleText>{{ development.brief }}</SectionSimpleText>
     <div v-if="sitelayout" class="bg-gray-300 shadow-inner">
-      <component :is="sitelayout" class="max-h-screen mx-auto mb-32" />
+      <component :is="sitelayout" />
     </div>
-    <PropertyCard v-for="property in availableHouses" :key="property.plot" :property="property" />
+    <div class="py-6">
+      <PropertyCard v-for="property in availableHouses" :key="property.plot" :property="property" class="py-6" />
+    </div>
     <SectionRegisterAnInterest :development="development.development" />
   </div>
 </template>

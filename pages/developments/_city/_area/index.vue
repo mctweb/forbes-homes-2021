@@ -35,7 +35,7 @@ export default {
   computed: {
     meta () {
       const metaData = {
-        title: 'About',
+        title: `Homes for sale in ${this.area}, ${this.city}`,
         description: `Find new builds and developments for sale in ${this.area}, ${this.city}. Forbes Homes desirable and exclusive developments of new houses in ${this.area}, ${this.city}.`,
         url: `${this.$config.rootUrl}${this.$route.path}`
       }

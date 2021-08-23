@@ -14,8 +14,8 @@
           </h2>
           <p>{{ development.city }}, {{ home.postcode }}</p>
         </header>
-        <aside>
-          <p>Only {{ amountAvailable }} Properties Available</p>
+        <aside class="pl-3 ml-auto text-right">
+          <p>Currently {{ amountAvailable }} Properties Available</p>
           <p>{{ amountComingSoon }} Future Releases</p>
         </aside>
       </div>
@@ -31,7 +31,7 @@
           </NuxtButton>
         </div>
       </div>
-      <SectionImageSlider :images="images" :alt="home.name + ' ' + development.development" />
+      <SectionImageSlider :images="images" :alt="'Plot ' + home.plot + ' ' + development.development" />
     </SectionTopBlue>
     <SectionSimpleText>{{ development.brief }}</SectionSimpleText>
     <Floorplans v-if="home.floorplans" :plans="home.floorplans" />
@@ -57,7 +57,7 @@
         </li>
       </ul>
     </section>
-    <component :is="home.siteLayout" class="max-h-screen pb-32 mx-auto" :selectedplot="home.plot" />
+    <component :is="home.siteLayout" :selectedplot="home.plot" />
     <MapsSingle :location="home.mapLocation" />
     <section class="flex flex-wrap p-12 md:py-20 lg:py-32">
       <SectionTextCard v-for="{title, description} in home.location" :key="title" class="w-full max-w-sm py-6 mx-auto md:p-6 md:w-1/3" :title="title">
@@ -117,8 +117,8 @@ export default {
   computed: {
     meta () {
       const metaData = {
-        title: 'About',
-        description: this.development.brief,
+        title: 'Plot ' + this.home.plot,
+        description: this.home.brief || this.development.brief,
         url: `${this.$config.rootUrl}${this.$route.path}`
       }
       return getSiteMeta(metaData)
