@@ -1,7 +1,7 @@
 <template>
   <div class="text-gray-300 bg-blue">
     <section class="flex flex-wrap items-center justify-between px-12 py-3 md:px-16 lg:px-20">
-      <div class="w-full py-8 md:flex-1">
+      <a href="https://www.nhbc.co.uk/" rel="nooopener norefer" target="_blank" class="w-full py-8 md:flex-1">
         <nuxt-picture
           src="/images/nhbc-logo.png"
           width="245"
@@ -10,7 +10,7 @@
           alt="NHBC Logo"
           loading="lazy"
         />
-      </div>
+      </a>
       <div class="flex-1 py-8">
         <ul class="text-sm text-right md:text-base ">
           <li>

@@ -242,9 +242,9 @@ const plot2 = {
     '/stripeside/plot2/second-floor.png',
     '/stripeside/plot2/garage.png'
   ],
-  image: '/stripeside/Stripeside-46.png',
+  image: '/stripeside/Stripeside-28.png',
   images: [
-    // { src: '/stripeside/plot-2.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/Stripeside-28.png', room: 'Exterior', featured: true },
     { src: '/stripeside/Stripeside-46.png', room: 'bedroom', featured: true },
     { src: '/stripeside/Stripeside-47.png', room: 'kitchen', featured: true },
     { src: '/stripeside/Stripeside-48.png', room: 'living', featured: true },
@@ -353,7 +353,6 @@ export const stripeside = {
     { src: '/stripeside/Stripeside-27.png', room: 'exterior', featured: true },
     { src: '/stripeside/Stripeside-28.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-29.png', room: 'exterior' },
-    { src: '/stripeside/Stripeside-30.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-31.png', room: 'bathroom' },
     { src: '/stripeside/Stripeside-32.png', room: 'wardrobe' },
     { src: '/stripeside/Stripeside-01.png', room: 'bedroom' },
@@ -371,7 +370,6 @@ export const stripeside = {
     { src: '/stripeside/Stripeside-36.png', room: 'bathroom' },
     { src: '/stripeside/Stripeside-37.png', room: 'bedroom' },
     { src: '/stripeside/Stripeside-38.png', room: 'bedroom' },
-    { src: '/stripeside/Stripeside-40.png', room: 'hall' },
     { src: '/stripeside/Stripeside-41.png', room: 'hall' },
     { src: '/stripeside/Stripeside-42.png', room: 'hall' },
     { src: '/stripeside/Stripeside-43.png', room: 'hall' },
