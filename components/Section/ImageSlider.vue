@@ -38,7 +38,8 @@ export default {
   data () {
     return {
       timer: null,
-      currentIndex: 0
+      currentIndex: 0,
+      loaded: []
     }
   },
 
@@ -51,10 +52,13 @@ export default {
   mounted () {
     this.startSlide()
   },
+  beforeDestroy () {
+    clearInterval(this.timer)
+  },
 
   methods: {
     startSlide () {
-    //   this.timer = setInterval(this.next, 2000)
+      this.timer = setInterval(this.next, 5000)
     },
 
     next () {
@@ -63,6 +67,7 @@ export default {
     prev () {
       this.currentIndex -= 1
     }
+
   }
 }
 </script>
