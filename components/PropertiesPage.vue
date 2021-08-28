@@ -1,11 +1,11 @@
 <template>
   <div>
     <SectionTopBlue v-for="{development, area, city, mainImages, houses} in developments.slice(0,1)" :key="development">
-      <h1 v-if="$slots.header" class="pt-6 mb-12 text-xl text-right text-white text-opacity-50 md:text-3xl lg:text-4xl ">
+      <h1 v-if="$slots.header" class="pt-6 mb-12 text-xl text-right text-white text-opacity-50 slide-in-up md:text-3xl lg:text-4xl ">
         <slot name="header" />
       </h1>
       <div class="flex flex-wrap items-end justify-between w-full my-12">
-        <header v-if="$slots.header" class="flex flex-col flex-wrap items-baseline pr-6">
+        <header v-if="$slots.header" class="flex flex-col flex-wrap items-baseline pr-6 slide-in-up">
           <h2 class="font-serif text-4xl lg:text-5xl xl:text-6xl">
             {{ development }}
           </h2>
@@ -13,7 +13,7 @@
             {{ area }}, {{ city }}
           </h3>
         </header>
-        <header v-else class="flex flex-col flex-wrap items-baseline pr-6">
+        <header v-else class="flex flex-col flex-wrap items-baseline pr-6 slide-in-up">
           <h1 class="font-serif text-4xl lg:text-5xl xl:text-6xl">
             {{ development }}
           </h1>
@@ -21,7 +21,7 @@
             {{ area }}, {{ city }}
           </h2>
         </header>
-        <aside class="pt-3">
+        <aside class="pt-3 fade-in">
           <NuxtButton class="text-white" :to="String('/developments/' + city+ '/' + area + '/' + development).toLowerCase()" light>
             View {{ development }}
           </NuxtButton>

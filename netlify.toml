@@ -8,3 +8,13 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+[[redirects]]
+  from = "/homes"
+  to = "/developments"
+  status = 301
+
+[[redirects]]
+  from = "/home"
+  to = "/developments"
+  status = 301
+

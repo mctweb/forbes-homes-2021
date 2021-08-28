@@ -2,15 +2,15 @@
   <div>
     <SectionTopBlue>
       <div class="flex flex-wrap items-center justify-between w-full my-12">
-        <header class="flex flex-col flex-wrap items-baseline ">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+        <header class="flex flex-col flex-wrap items-baseline slide-in-up">
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             {{ development.development }}
           </h1>
           <h2 class="text-xl">
             {{ development.area }}
           </h2>
         </header>
-        <aside>
+        <aside class="fade-in">
           <p class="pl-3 font-bold text-right">
             Currently {{ amountAvailable }} properties available
           </p>

@@ -111,5 +111,6 @@ export default {
 }
 .nuxtpicture::v-deep img{
   @apply object-cover w-full h-full;
+      animation: 1.5s ease-out 0s 1 fadeIn;
 }
 </style>

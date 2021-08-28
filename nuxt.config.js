@@ -134,14 +134,9 @@ export default {
       useWebmanifestExtension: false
     }
   },
-
-  // http: {
-  //   proxy: true // Can be also an object with default options
-  // },
-
-  // proxy: {
-  //   '/api/': '/.netlify/functions/'
-  // },
+  generate: {
+    fallback: '404.html'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

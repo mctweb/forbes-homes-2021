@@ -6,7 +6,7 @@
         width="2300"
         height="1400"
         fit="cover"
-        sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+        sizes="xs:320 sm:640 md:768 lg:1280 xl:1400 xxl:1600"
         class="nuxtpicture"
         :class="imageClass"
         :alt="alt + ' ' +currentImg.room"
@@ -76,17 +76,7 @@ export default {
 
 .nuxtpicture::v-deep img{
   @apply absolute inset-0 object-cover w-full h-full;
-    visibility: hidden;
-  width:100%;
-  opacity: 0;
-}
-.nuxtpicture.fade-in::v-deep img{
- transition: all 0.9s ease;
-  overflow: hidden;
-  visibility: visible;
-  position: absolute;
-  width:100%;
-  opacity: 1;
+  animation: 1.5s ease-out 0s 1 fadeIn;
 }
 
 </style>
