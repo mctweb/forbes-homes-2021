@@ -98,7 +98,9 @@ export default {
       const metaData = {
         title: 'Why choose Forbes Homes?',
         description: 'There are many house builders that could provide a house to you - why should you choose Forbes Homes?',
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.$img('/stripeside/Stripeside-25.png', { width: 1200, height: 627 })
+
       }
       return getSiteMeta(metaData)
     }

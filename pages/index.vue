@@ -65,7 +65,8 @@ export default {
       const metaData = {
         title: 'Find your forever home',
         description: 'Forbes Homes is a family owned business with over 30 years\' experience in building homes. We understand the importance of your home and our mission is your happiness.',
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.$img('/stripeside/StripesideFarmWide.png', { width: 1200, height: 627, fit: 'contain' })
       }
       return getSiteMeta(metaData)
     },

@@ -25,7 +25,7 @@
       width="2300"
       height="1400"
       fit="cover"
-      sizes="xs:320 sm:640 md:768 lg:1280 xl:1536 xxl:1600"
+      sizes="xs:320 sm:640 md:768 lg:1280 xl:1400 xxl:1600"
       class="nuxtpicture "
       alt="Stripeside, Netherley"
     />

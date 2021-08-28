@@ -35,7 +35,9 @@ export default {
       const metaData = {
         title: 'New Build Homes in ' + this.city,
         description: `Find new builds and developments for sale in ${this.city}. Forbes Homes exclusive developments of new houses in ${this.city} include large plots of land.`,
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.relevantDevelopments.length ? this.$img(this.relevantDevelopments[0].mainImages[0].src, { width: 1200, height: 627 }) : null
+
       }
       return getSiteMeta(metaData)
     }

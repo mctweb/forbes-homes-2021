@@ -50,7 +50,7 @@ export const getSiteMeta = (meta) => {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: (meta && meta.mainImage) || mainImage
+        content: (meta && meta.image) || mainImage
       },
       {
         hid: 'twitter:url',
@@ -70,7 +70,7 @@ export const getSiteMeta = (meta) => {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: (meta && meta.mainImage) || mainImage
+        content: (meta && meta.image) || mainImage
       }
     ]
   }

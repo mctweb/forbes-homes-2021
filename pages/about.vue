@@ -54,7 +54,9 @@ export default {
       const metaData = {
         title: 'About',
         description: 'Forbes Homes have always strived to deliver the highest quality homes in great locations, and we are proud of the exceptional standard that we provide throughout. ',
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.$img('/deeview/deeview.png', { width: 1200, height: 627 })
+
       }
       return getSiteMeta(metaData)
     }

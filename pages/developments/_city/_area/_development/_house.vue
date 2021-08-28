@@ -119,7 +119,9 @@ export default {
       const metaData = {
         title: 'Plot ' + this.home.plot,
         description: this.home.brief || this.development.brief,
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.images.length ? this.$img(this.images[0].src, { width: 1200, height: 627, fit: 'cover' }) : null
+
       }
       return getSiteMeta(metaData)
     }

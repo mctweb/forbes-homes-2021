@@ -37,7 +37,9 @@ export default {
       const metaData = {
         title: `Homes for sale in ${this.area}, ${this.city}`,
         description: `Find new builds and developments for sale in ${this.area}, ${this.city}. Forbes Homes desirable and exclusive developments of new houses in ${this.area}, ${this.city}.`,
-        url: `${this.$config.rootUrl}${this.$route.path}`
+        url: `${this.$config.rootUrl}${this.$route.path}`,
+        image: this.propertiesInArea.length ? this.$img(this.propertiesInArea[0].mainImages[0].src, { width: 1200, height: 627 }) : null
+
       }
       return getSiteMeta(metaData)
     }
