@@ -8,7 +8,6 @@
         fit="cover"
         sizes="xs:320 sm:640 md:768 lg:1280 xl:1400 xxl:1600"
         class="nuxtpicture"
-        :class="imageClass"
         :alt="alt + ' ' +currentImg.room"
         loading="lazy"
       />
@@ -39,8 +38,7 @@ export default {
   data () {
     return {
       timer: null,
-      currentIndex: 0,
-      imageClass: 'fade-in'
+      currentIndex: 0
     }
   },
 
@@ -60,9 +58,6 @@ export default {
     },
 
     next () {
-      this.imageClass = ''
-      this.timer = setInterval(() => { this.imageClass = 'fade-in' }, 100)
-
       this.currentIndex += 1
     },
     prev () {
@@ -76,7 +71,7 @@ export default {
 
 .nuxtpicture::v-deep img{
   @apply absolute inset-0 object-cover w-full h-full;
-  animation: 1.5s ease-out 0s 1 fadeIn;
+  animation: 2s ease-out 0s 1 fadeIn;
 }
 
 </style>
