@@ -27,10 +27,11 @@ export default {
     }
   },
   mounted () {
-    setInterval(() => {
+    setTimeout(() => {
       this.$router.push('/')
     }, 4000)
   }
+
 }
 </script>
 
