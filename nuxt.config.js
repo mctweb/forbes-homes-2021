@@ -47,7 +47,9 @@ export default {
       key: process.env.MAPS_API
     }],
     ['@nuxtjs/google-analytics', {
-      id: 'UA-36759801-2'
+      id: 'UA-36759801-2',
+      debug: true,
+      disabled: true
     }]
   ],
   googleFonts: {

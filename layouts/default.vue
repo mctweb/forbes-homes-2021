@@ -4,6 +4,7 @@
     <Nuxt class="min-h-full" />
     <ContactFull :large="contactPage" />
     <NavigationFooter />
+    <CookieConsent />
   </div>
 </template>
 

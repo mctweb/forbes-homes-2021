@@ -22,6 +22,9 @@
         </SectionTextCard>
       </div>
     </SectionTopBlue>
+    <div class="w-full px-6 py-32 md:px-12 lg:px-24 xl:px-32">
+      <QuotationSingle :quote="quote" dark />
+    </div>
     <SectionHalfStandoff
       v-for="({title, image, body, button},i) in advantages.slice(0,2)"
       :key="i + '-Advantages'"
@@ -85,7 +88,12 @@ export default {
           image: '/images/seal.png',
           button: null
         }
-      ]
+      ],
+      quote: {
+        message: 'Forbes Homes provided insight and very valuable design advice during the renovation and extension to our 90 year old house in the west of Aberdeen Their standards are very high and the quality of work is always first class. Additional support was provided when issues arose due to the age and design of the original property they advised on the best solution and correct course of action every time. Everything was carried out to schedule with no delays and on budget.  When we required additional external hard landscaping, this was carried out quickly with the same quality and attention to detail.',
+        author: 'Alistair McArthur',
+        authorTitle: ''
+      }
     }
   },
   head () {
