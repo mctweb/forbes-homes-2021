@@ -23,6 +23,9 @@
       <p class="self-start inline-block px-3 pt-2 pb-1 mb-2 text-sm text-gray-800 bg-gray-200 border border-gray-400 border-opacity-30">
         {{ property.status }}
       </p>
+      <p class="py-3 text-blue ">
+        {{ property.price }}
+      </p>
       <p>
         {{ property.brief }}
       </p>

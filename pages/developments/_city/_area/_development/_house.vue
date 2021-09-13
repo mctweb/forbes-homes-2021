@@ -6,10 +6,13 @@
           <h3 v-if="home.style" class="font-serif text-2xl tracking-wide text-gray-300 uppercase">
             {{ home.style }}
           </h3>
-          <h1 class="mb-6 text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-50 md:mb-12">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-50">
             {{ 'Plot ' + home.plot }}
           </h1>
-          <h2 class="text-xl">
+          <h3 v-if="home.price" class="text-xl text-gray-400 md:text-2xl lg:text-3xl">
+            {{ home.price }}
+          </h3>
+          <h2 class="mt-6 text-xl md:mt-12">
             {{ development.development }}, {{ development.area }}
           </h2>
           <p>{{ development.city }}, {{ home.postcode }}</p>
