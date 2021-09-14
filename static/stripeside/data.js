@@ -159,6 +159,7 @@ const crossley = {
     }
   ],
   images: [
+    { src: '/stripeside/crossley-exterior.png', room: 'Coming Soon', featured: true },
     { src: '/stripeside/basic-lg.png', room: 'Coming Soon', featured: true }
   ]
 }
@@ -242,9 +243,9 @@ const plot2 = {
     '/stripeside/plot2/second-floor.png',
     '/stripeside/plot2/garage.png'
   ],
-  image: '/stripeside/Stripeside-28.png',
+  image: '/stripeside/plot-2-exterior.png',
   images: [
-    { src: '/stripeside/Stripeside-28.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/plot-2-exterior.png', room: 'Exterior', featured: true },
     { src: '/stripeside/Stripeside-46.png', room: 'bedroom', featured: true },
     { src: '/stripeside/Stripeside-47.png', room: 'kitchen', featured: true },
     { src: '/stripeside/Stripeside-48.png', room: 'living', featured: true },
@@ -284,6 +285,7 @@ const plot5 = {
 const plot6 = {
   ...allPlots,
   ...crossley,
+  image: '/stripeside/crossley-exterior.png',
   status: 'Available',
   plot: '6',
   price: '£725,000'

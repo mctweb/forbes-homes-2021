@@ -19,6 +19,7 @@
         Together we will make your vision a reality.
       </p>
     </SectionSimpleText>
+    <SectionLargeImage image="/images/team-2.png" />
     <SectionFull image="/images/Deeview-Dining.png">
       <template #default>
         We will guide you through the buying process and ensure you end up with your dream home.

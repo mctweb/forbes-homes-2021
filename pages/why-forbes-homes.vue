@@ -35,7 +35,7 @@
     >
       {{ body }}
     </SectionHalfStandoff>
-    <SectionFull image="/images/Deeview-Dining.png">
+    <SectionFull image="/images/team-2.png">
       <template #default>
         You can be assured that by choosing a Forbes Home, you are choosing a family run business , proud of their reputation for having high quality homes and a high standard of care.
       </template>
@@ -90,7 +90,7 @@ export default {
         }
       ],
       quote: {
-        message: 'Forbes Homes provided insight and very valuable design advice during the renovation and extension to our 90 year old house in the west of Aberdeen Their standards are very high and the quality of work is always first class. Additional support was provided when issues arose due to the age and design of the original property they advised on the best solution and correct course of action every time. Everything was carried out to schedule with no delays and on budget.  When we required additional external hard landscaping, this was carried out quickly with the same quality and attention to detail.',
+        message: 'Forbes Homes provided insight and very valuable design advice during the renovation and extension to our 90 year old house in the west of Aberdeen. Their standards are very high and the quality of work is always first class. Additional support was provided when issues arose due to the age and design of the original property they advised on the best solution and correct course of action every time. Everything was carried out to schedule with no delays and on budget.  When we required additional external hard landscaping, this was carried out quickly with the same quality and attention to detail.',
         author: 'Alistair McArthur',
         authorTitle: ''
       }
