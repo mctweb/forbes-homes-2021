@@ -24,7 +24,7 @@
     <div class="flex flex-wrap items-center px-12 py-16 md:px-16 lg:px-20 ">
       <section class="w-full py-12 md:w-1/2 md:pl-6 lg:pl-12 ">
         <SectionTextCard
-          v-for="{title, description} in development.houses[0].location.slice(0,1)"
+          v-for="{title, description} in development.houses[0].location"
           :key="title"
           :title="title"
 
@@ -34,7 +34,7 @@
         </SectionTextCard>
       </section>
       <section class="w-full md:w-1/2">
-        <MapsSingle :location="development.houses[0].mapLocation" />
+        <MapsSingle :location="development.houses[0].mapLocation" large />
       </section>
     </div>
     <div v-if="sitelayout" class="bg-gray-300 shadow-inner">
