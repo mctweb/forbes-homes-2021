@@ -19,10 +19,28 @@
       </div>
       <SectionTopGallery :images="images" :development="development.development" />
     </SectionTopBlue>
+
     <SectionSimpleText>{{ development.brief }}</SectionSimpleText>
+    <div class="flex flex-wrap items-center px-12 py-16 md:px-16 lg:px-20 ">
+      <section class="w-full py-12 md:w-1/2 md:pl-6 lg:pl-12 ">
+        <SectionTextCard
+          v-for="{title, description} in development.houses[0].location.slice(0,1)"
+          :key="title"
+          :title="title"
+
+          class="max-w-xl mx-auto mb-6 lg:mb-12"
+        >
+          {{ description }}
+        </SectionTextCard>
+      </section>
+      <section class="w-full md:w-1/2">
+        <MapsSingle :location="development.houses[0].mapLocation" />
+      </section>
+    </div>
     <div v-if="sitelayout" class="bg-gray-300 shadow-inner">
       <component :is="sitelayout" />
     </div>
+
     <div class="py-6">
       <PropertyCard v-for="property in availableHouses" :key="property.plot" :property="property" class="py-6" />
     </div>
