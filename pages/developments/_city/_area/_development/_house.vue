@@ -35,7 +35,18 @@
         </div>
       </div>
       <SectionImageSlider :images="images" :alt="'Plot ' + home.plot + ' ' + development.development" />
+      <div class="flex flex-wrap items-center pt-6 text-gray-100 md:pt-12">
+        <section class="w-full md:w-1/2">
+          <MapsSingle :location="home.mapLocation" />
+        </section>
+        <section class="w-full py-12 md:w-1/2 md:pl-6 lg:pl-12 ">
+          <SectionTextCard v-for="{title, description} in home.location.slice(0,1)" :key="title" :title="title" blue class="max-w-xl mx-auto mb-6 lg:mb-12">
+            {{ description }}
+          </SectionTextCard>
+        </section>
+      </div>
     </SectionTopBlue>
+
     <SectionSimpleText>{{ development.brief }}</SectionSimpleText>
     <Floorplans v-if="home.floorplans" :plans="home.floorplans" />
     <SectionHalfStandoff v-for="(feature,i) in home.features" :key="i" :title="feature.title" :image="feature.image" :flip="i % 4 === 2 || i % 4 === 3">

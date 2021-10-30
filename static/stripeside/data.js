@@ -35,6 +35,10 @@ const allPlots = {
   },
   location: [
     {
+      title: 'Directions',
+      description: 'From Aberdeen travel west along the South Deeside Road B9077 and pass the Old Mill Inn on the right hand side. Turn second left on to the B979 and continue along this road for some time. Turn left at the signpost for Lairhillock Inn and pass this on the right hand side. Pass through the farm at the top of the hill and then just before the trees on the left turn left at the signpost for Crossley. Turn first left and Plot 1 is the first house on the right hand side.'
+    },
+    {
       title: 'Great For Commuting', description: 'The new Aberdeen bypass is a short drive away giving easy access to Westhill, Dyce, Cove and Stonehaven.'
     },
     {

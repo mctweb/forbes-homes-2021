@@ -20,6 +20,7 @@ export default {
         title: 'Contact',
         description: 'We would love to hear from you. You can contact us on this page via phone, email or this online form.',
         url: `${this.$config.rootUrl}${this.$route.path}`
+        
       }
       return getSiteMeta(metaData)
     }

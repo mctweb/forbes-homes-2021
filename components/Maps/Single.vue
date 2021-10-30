@@ -5,6 +5,7 @@
     :center="location"
     :options="{height: '100%', fullscreenControl: false, mapTypeControl:false, layout:{'height': '100%'}, streetViewControl:false}"
     :zoom="13"
+    :class="{large:large}"
   >
     <GMapMarker
       :key="location.id"
@@ -29,14 +30,22 @@ export default {
         }
       }
 
+    },
+    large: {
+      type: Boolean,
+      default: false
     }
   }
 
 }
 </script>
 <style>
+.large .GMap__Wrapper {
+  width: 100%;
+  height: 800px!important;
+}
 .GMap__Wrapper {
   width: 100%;
-  height: 600px;
+  height: 500px!important;
 }
 </style>
