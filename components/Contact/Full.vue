@@ -11,6 +11,7 @@
             <ContactBasic :contact="contact" @update:contact="updateContact">
               <ContactAppointment v-if="large" :contact="contact" @appointment="updateInterests" />
               <ContactInterested v-if="large" :contact="contact" @interest="updateInterests" />
+              <ContactHearFrom :contact="contact" @hearfrom="updateHearFrom" />
             </ContactBasic>
 
             <NuxtButton class="mt-6 ml-auto" light type="submit">
@@ -71,6 +72,9 @@ export default {
       this.contact = { ...this.contact, value }
     },
     updateInterests (value) {
+      this.contact = { ...this.contact, ...value }
+    },
+    updateHearFrom (value) {
       this.contact = { ...this.contact, ...value }
     },
     async submitForm () {
