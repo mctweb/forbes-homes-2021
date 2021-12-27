@@ -25,7 +25,8 @@ export default {
         { media: 'Evening Express', selected: false },
         { media: 'Press & Journal', selected: false },
         { media: 'Word of Mouth', selected: false },
-        { media: 'Facebook', selected: false }
+        { media: 'Facebook', selected: false },
+        { media: 'Other', selected: false }
       ]
     }
   },

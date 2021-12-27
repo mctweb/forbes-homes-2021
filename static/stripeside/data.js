@@ -145,12 +145,12 @@ const crossley = {
     {
       title: 'Modern & Spacious Kitchen',
       description: 'Clean lines, exquisite materials and clearly structured architecture – these are the distinguishing marks of this designer Nobilia kitchen. Integrated appliances, with solid quartz worktops make for a modern and polished finish.',
-      image: '/stripeside/Stripeside-47.png'
+      image: '/stripeside/crossley/kitchen.png'
     },
     {
       title: 'Enviable Lounge',
       description: 'No matter what size of home, the lounge is the place where people can relax, chat, and enjoy each other\'s company. This spacious living room ensures that the family can enjoy time together in comfort with plenty of natural light.',
-      image: '/stripeside/Stripeside-48.png'
+      image: '/stripeside/crossley/lounge.png'
     },
     {
       title: 'Four Generous Bedrooms',
@@ -160,11 +160,13 @@ const crossley = {
     {
       title: 'Four Luxurious Bathrooms',
       description: 'The Crossley style of home come with 4 fully fitted bathrooms.',
-      image: '/stripeside/Stripeside-04.png'
+      image: '/stripeside/crossley/bathroom.png'
     }
   ],
   images: [
-    { src: '/stripeside/crossley-exterior.png', room: 'Coming Soon', featured: true },
+    { src: '/stripeside/crossley/exterior-1.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley-exterior.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/exterior-2.png', room: 'Exterior', featured: true },
     { src: '/stripeside/basic-lg.png', room: 'Coming Soon', featured: true }
   ]
 }

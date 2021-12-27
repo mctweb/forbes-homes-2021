@@ -42,6 +42,9 @@
         Company No. SC167500
       </div>
     </section>
+    <section class="flex justify-end px-12 pb-8">
+      <MCT class="pr-6" />
+    </section>
   </div>
 </template>
 
