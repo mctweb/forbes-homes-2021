@@ -38,7 +38,6 @@ export default {
 
   watch: {
     mediaSelected (newValue, oldValue) {
-      console.log(this.mediaSelected)
       this.$emit('hearfrom', { hearfrom: this.mediaSelected })
     }
   },
