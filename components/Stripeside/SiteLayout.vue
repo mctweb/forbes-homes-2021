@@ -296,6 +296,9 @@ export default {
 .plot[status*="Future Release"]:hover > .house, .plot[status*="Future Release"]:hover > .garage{
   fill: theme('colors.gray.300')
 }
+.plot[status*="Reserved"] > .house, .plot[status*="Reserved"] > .garage{
+  fill: #d05410;
+}
 
 .box[status*="Sold"]{
   @apply bg-red-700;
@@ -313,6 +316,6 @@ export default {
 }
 
 .box[status*="Reserved"]{
-  @apply bg-blue;
+  background-color: #d05410;
 }
 </style>
