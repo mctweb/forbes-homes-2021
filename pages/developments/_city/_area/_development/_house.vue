@@ -6,10 +6,15 @@
           <h3 v-if="home.style" class="font-serif text-2xl tracking-wide text-gray-300 uppercase">
             {{ home.style }}
           </h3>
-          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-50">
-            {{ 'Plot ' + home.plot }}
-          </h1>
-          <h3 v-if="home.price" class="text-xl text-gray-400 md:text-2xl lg:text-3xl">
+          <div class="flex flex-wrap items-center justify-between">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-50">
+              {{ 'Plot ' + home.plot }}
+            </h1>
+            <h3 v-if="['Reserved', 'Sold'].includes(home.status)" class="inline-block px-4 pt-2 pb-1 ml-6 text-xl font-bold uppercase bg-white text-blue md:text-2xl lg:text-3xl">
+              {{ home.status }}
+            </h3>
+          </div>
+          <h3 v-if="home.price " class="text-xl text-gray-400 md:text-2xl lg:text-3xl">
             {{ home.price }}
           </h3>
           <h2 class="mt-6 text-xl md:mt-12">

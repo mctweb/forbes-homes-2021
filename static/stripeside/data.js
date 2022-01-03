@@ -6,7 +6,7 @@ const allPlots = {
   type: 'New Build Homes',
   image: '/stripeside/basic.png',
   siteLayout: 'StripesideSiteLayout',
-  price: '£TBC',
+  price: '',
   features: [
     {
       title: 'Modern & Spacious Kitchen',
