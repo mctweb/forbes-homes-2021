@@ -305,7 +305,7 @@ const plot1 = {
 const plot2 = {
   ...allPlots,
   ...crynoch,
-  status: 'Reserved',
+  status: 'Sold',
   plot: '2',
   price: '£695,000',
   brief: 'A striking 5 bedroom home with extremely spacious accommodation over three levels. Timeless architecture, modern kitchen, spacious living areas and a detached double garage.',
