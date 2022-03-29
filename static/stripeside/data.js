@@ -249,7 +249,7 @@ const crynoch = {
 const plot1 = {
   ...allPlots,
   ...crynoch,
-  status: 'Viewing Home',
+  status: 'Sold',
   plot: '1',
   price: '£695,000',
   image: '/stripeside/Stripeside-27.png',
