@@ -21,7 +21,7 @@
       </section>
     </div>
     <nuxt-picture
-      src="/stripeside/StripesideFarmWide.png"
+      src="/stripeside/StripesideNew.png"
       width="2300"
       height="1400"
       fit="cover"

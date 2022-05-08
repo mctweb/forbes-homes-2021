@@ -12,7 +12,7 @@
         </header>
         <aside class="fade-in">
           <p class="pl-3 font-bold text-right">
-            Currently {{ amountAvailable }} properties available
+            Currently {{ amountAvailable }} {{ amountAvailable === 1 ? 'Property' : 'Properties' }} Available
           </p>
           <p>{{ development.type }} in {{ development.city }}</p>
         </aside>

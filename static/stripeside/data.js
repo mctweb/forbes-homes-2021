@@ -30,32 +30,32 @@ const allPlots = {
   specification: [
     {
       title: 'Kitchen',
-      description: 'Choice of high specification furniture, Neff appliances with quartz worktop as per viewing home.',
+      description: 'Choice of high specification furniture, Neff appliances with quartz worktop.',
       list: [
         'Double oven', 'Induction hob', 'Extractor canopy', 'Integral fridge freezer', 'Dishwasher'
       ]
     },
     { title: 'Dining Room', description: 'Open plan dining room with log burning stove.' },
-    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop as per viewing home.' },
+    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop.' },
     { title: 'Carpets', description: 'Fitted in living room, bedrooms and dressing rooms. Colour samples are available to select from.' },
     { title: 'Luxury Vinyl Flooring', description: 'Kardean vinyl flooring in hall, kitchen and utility areas and also available in all shower room, en suite and bathroom areas. Samples available to select from.' },
     { title: 'Underfloor Heating', description: 'The ground floor has underfloor heating throughout. On the 1st floor, electric under floor heating is fitted in the bathroom and en suite shower rooms.' },
-    { title: 'Tiles', description: 'Wall tiling as per viewing home – tiles supplied from Aberdeen Tile Distributors. Also available for all shower rooms, en suite and bathroom floors.' },
+    { title: 'Tiles', description: 'Wall tiling – tiles supplied from Aberdeen Tile Distributors. Also available for all shower rooms, en suite and bathroom floors.' },
     {
       title: 'Bathroom & En Suite Sanitaryware',
-      description: '(as per viewing home)',
+      description: '',
       list: [
         'Wall hung Roca toilet pans (concealed cistern already installed)',
         'The ground floor shower, main bathroom and bedroom 2 ensuite have single wash hand basins including vanity unit',
         'The master en suite is piped for a double wash hand basin with option of vanity unit below',
         'LED mirrors above all wash hand basins',
         'Fixed head and slide rails fitted in each shower with Zen wet room fixed glass panels',
-        'Free standing bath in bathroom as per viewing home',
+        'Free standing bath in bathroom',
         'Towel rails in each en suite, bathroom and shower room',
         'Electric underfloor heating mats in first floor en suites and bathroom.'
       ]
     },
-    { title: 'Window Blinds', description: 'Roller blinds installed as per viewing home.' },
+    { title: 'Window Blinds', description: 'Roller blinds installed.' },
     {
       title: 'Sound System',
       description: 'The following rooms have been hard wired for ceiling speakers which will be installed.  All speakers are wired back to the cupboard in the 1st floor landing where the Sonos amps/controllers are located',
@@ -87,7 +87,7 @@ const allPlots = {
     },
     {
       title: 'Four Luxurious Bathrooms',
-      description: 'The Crossley style of home come with 4 fully fitted bathrooms.',
+      description: 'The Crossley style of home comes with 4 fully fitted bathrooms.',
       image: '/stripeside/crossley/bathroom.png'
     }
   ]
@@ -104,43 +104,27 @@ const crossley = {
   specification: [
     {
       title: 'Kitchen',
-      description: 'Choice of high specification furniture, Neff appliances with quartz worktop as per viewing home.',
+      description: 'Choice of high specification furniture and integrated appliances with solid quartz worktop.',
       list: [
-        'Double oven', 'Induction hob', 'Extractor canopy', 'Integral fridge freezer', 'Dishwasher'
+        'Double oven', 'Induction hob', 'Ceiling mounted extractor hood', 'Fridge freezer', 'Dishwasher'
       ]
     },
     { title: 'Dining Room', description: 'Open plan dining room with log burning stove.' },
-    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop as per viewing home.' },
-    { title: 'Carpets', description: 'Fitted in living room, bedrooms and dressing rooms. Colour samples are available to select from.' },
-    { title: 'Luxury Vinyl Flooring', description: 'Kardean vinyl flooring in hall, kitchen and utility areas and also available in all shower room, en suite and bathroom areas. Samples available to select from.' },
+    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop.' },
+    { title: 'Flooring', description: 'A flooring package is included with the price of the property.' },
     { title: 'Underfloor Heating', description: 'The ground floor has underfloor heating throughout. On the 1st floor, electric under floor heating is fitted in the bathroom and en suite shower rooms.' },
-    { title: 'Tiles', description: 'Wall tiling as per viewing home – tiles supplied from Aberdeen Tile Distributors. Also available for all shower rooms, en suite and bathroom floors.' },
     {
       title: 'Bathroom & En Suite Sanitaryware',
-      description: '(as per viewing home)',
-      list: [
-        'Wall hung Roca toilet pans (concealed cistern already installed)',
-        'The ground floor shower, main bathroom and bedroom 2 ensuite have single wash hand basins including vanity unit',
-        'The master en suite is piped for a double wash hand basin with option of vanity unit below',
-        'LED mirrors above all wash hand basins',
-        'Fixed head and slide rails fitted in each shower with Zen wet room fixed glass panels',
-        'Free standing bath in bathroom as per viewing home',
-        'Towel rails in each en suite, bathroom and shower room',
-        'Electric underfloor heating mats in first floor en suites and bathroom.'
-      ]
+      description: 'Each bathroom and en suite will have a towel rail, an LED mirror above each wash hand basin and vanity unit (the master en-suite has an option for a double wash hand basin and vanity unit) along with a wall hung toilet pan and concealed cistern. All shower enclosures have a fixed head and slide rail option with Zen wet room fixed glass panels. A free-standing bath is included in the bathroom. Full height tiling supplied and installed as standard.'
     },
-    { title: 'Window Blinds', description: 'Roller blinds installed as per viewing home.' },
+    { title: 'Window Blinds', description: 'Black out blinds will be installed in all bedroom areas, non-black out blinds installed in the lounge, kitchen dining and utility.' },
     {
       title: 'Sound System',
-      description: 'The following rooms have been hard wired for ceiling speakers which will be installed.  All speakers are wired back to the cupboard in the 1st floor landing where the Sonos amps/controllers are located',
-      list: [
-        'Living room',
-        'Kitchen/Dining',
-        'Master bedroom and master en suite',
-        'Bathroom',
-        'First floor hall',
-        'All remaining bedrooms'
-      ]
+      description: 'A Sonos Sound System is included with all speakers hardwired back to a central cupboard where the controllers will be located.'
+    },
+    {
+      title: 'Garden',
+      description: 'The extensive pre-landscaped garden includes a feature rockery, plants, a fully paved driveway and patio areas.'
     }
   ],
   features: [
@@ -151,8 +135,8 @@ const crossley = {
     },
     {
       title: 'Enviable Lounge',
-      description: 'No matter what size of home, the lounge is the place where people can relax, chat, and enjoy each other\'s company. This spacious living room ensures that the family can enjoy time together in comfort with plenty of natural light.',
-      image: '/stripeside/crossley/lounge.png'
+      description: 'No matter what size of home, the lounge is the place where people can relax, chat, and enjoy each other\'s company. This spacious living room ensures that the family can enjoy time together in comfort with plenty of natural light. There is also a spacious open plan dining room with log burning stove.',
+      image: '/stripeside/crossley/lounge-2.png'
     },
     {
       title: 'Four Generous Bedrooms',
@@ -169,7 +153,8 @@ const crossley = {
     { src: '/stripeside/crossley/exterior-1.png', room: 'Exterior', featured: true },
     { src: '/stripeside/crossley-exterior.png', room: 'Exterior', featured: true },
     { src: '/stripeside/crossley/exterior-2.png', room: 'Exterior', featured: true },
-    { src: '/stripeside/basic-lg.png', room: 'Coming Soon', featured: true }
+    { src: '/stripeside/crossley/exterior-5.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/lounge-2.png', room: 'Open Plan Dining Room', featured: true }
   ]
 }
 
@@ -206,19 +191,19 @@ const crynoch = {
   specification: [
     {
       title: 'Kitchen',
-      description: 'Choice of high specification furniture, Neff appliances with quartz worktop as per viewing home.',
+      description: 'Choice of high specification furniture, Neff appliances with quartz worktop.',
       list: [
         'Double oven', 'Induction hob', 'Extractor canopy', 'Integral fridge freezer', 'Dishwasher'
       ]
     },
-    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop as per viewing home.' },
+    { title: 'Utility', description: 'Choice of high specification furniture with 40mm laminate worktop.' },
     { title: 'Carpets', description: 'Fitted in living room, bedrooms and dressing rooms. Colour samples are available to select from.' },
     { title: 'Luxury Vinyl Flooring', description: 'Kardean vinyl flooring or equal laminate flooring in hall, kitchen and utility areas and also available in all shower room, en suite and bathroom areas. Samples available to select from.' },
     { title: 'Underfloor Heating', description: 'The ground floor has underfloor heating throughout. On the upper floors, electric under floor heating is fitted in the bathroom and en suite shower rooms.' },
-    { title: 'Tiles', description: 'Wall tiling as per viewing home – tiles supplied from Aberdeen Tile Distributors. Also available for all shower rooms, en suite and bathroom floors.' },
+    { title: 'Tiles', description: 'Wall tiling – tiles supplied from Aberdeen Tile Distributors. Also available for all shower rooms, en suite and bathroom floors.' },
     {
       title: 'Bathroom & En Suite Sanitaryware',
-      description: '(as per viewing home)',
+      description: '',
       list: [
         'Wall hung Roca toilet pans (concealed cistern already installed)',
         'The ground floor shower and main bathroom have single wash hand basins including vanity unit',
@@ -226,12 +211,12 @@ const crynoch = {
         'The second floor en suites have semi pedestal wash hand basins',
         'LED mirrors above all wash hand basins',
         'Fixed head and slide rails fitted in each shower with Zen wet room fixed glass panels',
-        'Free standing bath in bathroom as per viewing home',
+        'Free standing bath in bathroom',
         'Towel rails in each en suite, bathroom and shower room',
         'Electric underfloor heating mats in first and second floor en suites and bathroom.'
       ]
     },
-    { title: 'Window Blinds', description: 'Roller blinds installed as per viewing home.' },
+    { title: 'Window Blinds', description: 'Roller blinds installed.' },
     {
       title: 'Sound System',
       description: 'The following rooms have been hard wired for ceiling speakers which will be installed.   All speakers are wired back to the cupboard in the kitchen where the Sonos amps/controllers are located',
@@ -402,9 +387,20 @@ export const stripeside = {
   logo: '/stripeside/StripesideLogoLight.png',
   backimage: '/stripeside/StripesideBackFar.png',
   brief: 'Stripeside’s 4 and 5-bedroom detached villas form part of a small exclusive development built by Forbes Homes, builders who know all about country living. Once completed, Stripeside will comprise three 5-bedroom properties and nine 4-bedroom homes',
-  mainImages: [{ src: '/stripeside/Stripeside-27.png', room: 'exterior', featured: true }, { src: '/stripeside/Stripeside-25.png', room: 'exterior', featured: true }, { src: '/stripeside/Stripeside-20.png', room: 'exterior', featured: true }],
+  mainImages: [
+    { src: '/stripeside/Stripeside-25.png', room: 'exterior', featured: true },
+    { src: '/stripeside/Stripeside-20.png', room: 'exterior', featured: true },
+    { src: '/stripeside/crossley/exterior-1.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley-exterior.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/exterior-2.png', room: 'Exterior', featured: true }
+  ],
   images: [
     { src: '/stripeside/Stripeside-46.png', room: 'bedroom', featured: true },
+    { src: '/stripeside/crossley/exterior-1.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley-exterior.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/exterior-2.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/exterior-5.png', room: 'Exterior', featured: true },
+    { src: '/stripeside/crossley/lounge-2.png', room: 'Open Plan Dining Room', featured: true },
     { src: '/stripeside/Stripeside-47.png', room: 'kitchen', featured: true },
     { src: '/stripeside/Stripeside-48.png', room: 'living', featured: true },
     { src: '/stripeside/Stripeside-03.png', room: 'view' },
@@ -417,14 +413,13 @@ export const stripeside = {
     { src: '/stripeside/Stripeside-17.png', room: 'living' },
     { src: '/stripeside/Stripeside-18.png', room: 'living' },
     { src: '/stripeside/Stripeside-19.png', room: 'exterior' },
-    { src: '/stripeside/Stripeside-20.png', room: 'exterior', featured: true },
+    { src: '/stripeside/Stripeside-20.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-21.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-22.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-23.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-24.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-25.png', room: 'exterior', featured: true },
     { src: '/stripeside/Stripeside-26.png', room: 'exterior' },
-    { src: '/stripeside/Stripeside-27.png', room: 'exterior', featured: true },
     { src: '/stripeside/Stripeside-28.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-29.png', room: 'exterior' },
     { src: '/stripeside/Stripeside-31.png', room: 'bathroom' },

@@ -23,7 +23,7 @@
           <p>{{ development.city }}, {{ home.postcode }}</p>
         </header>
         <aside class="pl-3 ml-auto text-right">
-          <p>Currently {{ amountAvailable }} Properties Available</p>
+          <p>Currently {{ amountAvailable }} {{ amountAvailable === 1 ? 'Property' : 'Properties' }} Available</p>
           <p>{{ amountComingSoon }} Future Releases</p>
         </aside>
       </div>
